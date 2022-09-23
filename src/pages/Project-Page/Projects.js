@@ -9,7 +9,7 @@ const projectData = [
     address: "Created with: HTML, CSS, Javascript, ReactJS",
     description:
       "If you are looking at this text right now, this is my personal website! It is my humble attempt to integrate my programming knowledge into a web based application. This website will continue to be updated as I progress with my career.",
-    link: "https://github.com/RWang-Dev/Personal-Website",
+    link: "https://github.com/RWang-Dev/My-Website",
   },
   {
     id: "p2",

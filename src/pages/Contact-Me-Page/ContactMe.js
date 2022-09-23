@@ -19,7 +19,7 @@ const contactInfo = [
     id: "c3",
     image: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
     text: "Come see my code on GitHub",
-    link: "https://github.com/RWang03",
+    link: "https://github.com/RWang-Dev",
   },
   {
     id: "c4",
