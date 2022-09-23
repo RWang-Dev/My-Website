@@ -1,0 +1,54 @@
+.contactDiv {
+  margin-left: -36px;
+  width: auto;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgb(169, 208, 255);
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.contactDiv button {
+  width: 200px;
+  border-radius: 20px;
+  border-color: lightblue;
+}
+.contactDiv img {
+  display: inline-block;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.content {
+  display: inline;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.contactBreak {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.centerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+button:active {
+  background-color: gray;
+}
+
+.text {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
