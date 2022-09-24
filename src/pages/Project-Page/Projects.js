@@ -8,7 +8,7 @@ const projectData = [
       "https://www.michalsons.com/wp-content/uploads/2010/03/website-design-e1564662874285.jpg",
     address: "Created with: HTML, CSS, Javascript, ReactJS",
     description:
-      "If you are looking at this text right now, this is my personal website! It is my humble attempt to integrate my programming knowledge into a web based application. This website will continue to be updated as I progress with my career.",
+      "This is my personal website! It is my humble attempt to integrate my programming knowledge into a web based application. This website will continue to be updated as I progress with my career. Visit anytime at https://google.rwang.us",
     link: "https://github.com/RWang-Dev/My-Website",
   },
   {
