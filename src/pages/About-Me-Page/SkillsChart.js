@@ -1,4 +1,6 @@
 import { Bar } from "react-chartjs-2";
+
+//Bar Chart reference/template
 import {
   Chart as ChartJS,
   CategoryScale,

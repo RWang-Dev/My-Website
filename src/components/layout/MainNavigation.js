@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-
 import classes from "./MainNavigation.module.css";
+
+// This function creates the header on the website and links the different sections of the website
 function MainNavigation() {
   return (
     <header className={classes.header}>

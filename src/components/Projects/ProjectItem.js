@@ -1,6 +1,7 @@
 import Card from "../ui/Card";
 import classes from "./ProjectItem.module.css";
 
+// Sets the individual ProjectItems
 function ProjectItem(props) {
   return (
     <li className={classes.item}>
@@ -14,11 +15,9 @@ function ProjectItem(props) {
           <p>{props.description}</p>
         </div>
         <div className={classes.actions}>
+          {/* Used the ? : syntax to do if else checks within the JSX code */}
           {props.id === "p2" ? (
             <div>
-              {/* <button style={{ marginBottom: 15, marginRight: 20 }}>
-                Visit website
-              </button> */}
               <a href={props.link} alt="" target="_blank">
                 <button style={{ marginBottom: 15 }}>View code</button>
               </a>

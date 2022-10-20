@@ -1,5 +1,6 @@
 import ContactList from "../../components/Contact-Me/ContactList.js";
 
+// Same style of function as the AboutMe Pages
 const contactInfo = [
   {
     id: "c1",

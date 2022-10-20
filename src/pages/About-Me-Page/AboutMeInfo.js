@@ -1,6 +1,7 @@
 import React from "react";
 import SkillsChart from "./SkillsChart";
 
+// exports an array constant containing all of my info in this separate file
 export const myInfo = [
   {
     id: "m1",
@@ -9,10 +10,10 @@ export const myInfo = [
     description: (
       <div>
         <p>
-          My name is Robert, and I am currently a second year computer science
-          student at the University of Minnesota. What you're seeing here is my
-          website where I post many thing about me, like the projects that I've
-          worked on and my contact informaton.
+          My name is Robert, and I am currently a sophomore at the University of Minnesota Twin Cities
+          studying computer science. I am currently open to any work opportunities,
+          so please feel free to find my contact information in the contact me tab up above. This website is 
+          where I post many things about me, like the projects that I've worked on, past experiences, and updated links to my GitHub code. Please take a look around.
         </p>
       </div>
     ),
@@ -78,10 +79,10 @@ export const myInfo = [
     image: null,
     description: (
       <div>
-        <b>Programming Languages: </b> Python, Java, HTML, CSS, C, OCaml, C#,
-        Javascript
+        <b>Programming Languages: </b> Python, Java, HTML, CSS, C, OCaml, C#, 
+        Javascript, X86-64 assembly
         <br />
-        <b>Software & Tools: </b> Visual Studio Code, ReactJS, Unity, Blender,
+        <b>Software & Tools: </b> Visual Studio Code, ReactJS, Unity Engine, Blender 3D,
         Terminal, GitHub, Git, Flask, Visual Studio
       </div>
     ),
@@ -96,10 +97,9 @@ export const myInfo = [
           <p>
             <h3>Mu2e experiment engineer</h3> (January 2022 - December 2022)
             <hr></hr>
-            I worked as part of the Muon-to-Electron Conversion experiment,
-            which is a physics experiment at Fermilab in the US. The University
-            of Minnesota, tasked with producing the particle "camera" detector,
-            employed students to construct this crucial part of the experiment.
+            The Muon-To-Electron Experiment (Mu2e) is a national physics experiment centered at Fermilab aiming to discover physics beyond the standard model. 
+            I worked for the UMN Physics Department at the Physics and Nanotechnology building to build an electron detector that plays a crucial part in the whole experiment at Fermilab. 
+            To efficiently build such intricate and fragile parts for an electron detector, I had to learn how to use many custom-made tools and software to provide detailed data on each part that I produced.
             <br />
             <hr></hr>
             <b>Particular duties included:</b>
@@ -134,6 +134,22 @@ export const myInfo = [
               <br /> - Programed an TI-Innovator hub to detect minute changes in
               fluid temperature <br /> - Worked my way up to become an integral
               part of the build team <br />
+            </p>
+          </p>
+        </div>
+        <br />
+        <div>
+          <p>
+            <h3>Tutor and tennis coach</h3> (June 2017 - September 2020)
+            <hr></hr>
+            I assisted in the operation of this large-scale summer school and specialized in teaching various subjects of math and science, as well as formulating hands on projects. 
+            The tennis program at this camp was also my responsibility, which included advertising on social media about the program and devising optimal training methods.
+            <br />
+            <hr></hr>
+            <b>Duties and subjects taught:</b>
+            <p>
+              - Dedicated over 200 hours volunteering and working at this camp tutoring students of all ages in STEM subjects and worked to advertise and manage the tennis program
+              <br /> - Connected with other businesses and professional individuals to support the camp <br /> - Earned the Gold President's volunteer service award in my sophomore year <br />
             </p>
           </p>
         </div>

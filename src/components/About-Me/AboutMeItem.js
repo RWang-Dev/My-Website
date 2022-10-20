@@ -1,6 +1,7 @@
 import classes from "./AboutMeItem.module.css";
 import Card from "../ui/Card";
 function AboutMeItem(props) {
+  // Checks if there is an image inside the Card that is being passed into the function
   if (props.image !== null) {
     return (
       <li className={classes.item}>
