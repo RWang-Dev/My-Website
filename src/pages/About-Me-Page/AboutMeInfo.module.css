@@ -1,0 +1,19 @@
+.white {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.blue {
+    background-color: rgba(33, 169, 248, 0.301);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.standard {
+    padding-left: 20px;
+}

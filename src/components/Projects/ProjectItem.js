@@ -11,9 +11,12 @@ function ProjectItem(props) {
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
-          <address>{props.address}</address>
+          <address>{props.address}</address>  
+        </div>
+        <div className={classes.description}>
           <p>{props.description}</p>
         </div>
+        
         <div className={classes.actions}>
           {/* Used the ? : syntax to do if else checks within the JSX code */}
           {props.id === "p2" ? (

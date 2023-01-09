@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.description{
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .image {
   display: flex;
   border-top-right-radius: 6px;
@@ -43,9 +47,9 @@
 .actions button {
   font: inherit;
   cursor: pointer;
-  color: black;
-  border: 1px solid rgb(0, 164, 11);
-  background-color: rgb(0, 164, 11);
+  color: white;
+  border: 1px solid white;
+  background-color: rgb(41, 41, 233);
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
 }
@@ -56,7 +60,7 @@
 }
 
 .card {
-  background-color: rgb(133, 192, 224);
+  background-color: rgba(33, 169, 248, 0.301);
   margin-bottom: 50px;
   border-radius: 40px;
   width: 1000px;

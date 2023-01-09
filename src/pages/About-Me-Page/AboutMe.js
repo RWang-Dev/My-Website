@@ -29,7 +29,7 @@ function AboutMePage() {
   return (
     <section>
       {/* Title section and the AboutMeList, containing all of the AboutMeInfo formatted correctly */}
-      <h1 style={{ marginTop: 75, marginBottom: 75 }}>About Me</h1>
+      {/* <h1 style={{ marginTop: 75, marginBottom: 75 }}>About Me</h1> */}
       <AboutMeList meetups={aboutMeData} />
     </section>
   );
