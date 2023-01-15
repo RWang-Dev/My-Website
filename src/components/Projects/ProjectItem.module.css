@@ -47,16 +47,16 @@
 .actions button {
   font: inherit;
   cursor: pointer;
-  color: white;
-  border: 1px solid white;
-  background-color: rgb(41, 41, 233);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(105, 140, 255);
+  background-color: rgba(0, 162, 255, 0.301);
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
 }
 
 .actions button:hover,
 .actions button:active {
-  background-color: #ffe2ed;
+  background-color: #94d4ff;
 }
 
 .card {

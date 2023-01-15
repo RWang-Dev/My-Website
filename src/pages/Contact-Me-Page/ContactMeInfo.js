@@ -24,6 +24,6 @@ export const contactInfo = [
       image:
         "https://www.creativefabrica.com/wp-content/uploads/2021/06/13/CV-or-Resume-Icon-Graphics-13336606-1-580x376.jpg",
       text: "Download my resume here",
-      link: "RW-Resume-2022.pdf",
+      link: "My-Resume-2023.pdf",
     },
   ];

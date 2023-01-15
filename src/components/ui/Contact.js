@@ -6,13 +6,13 @@ function Contact(props) {
       <div className={classes.contactDiv}>
         <div className={classes.flex}>
           {props.id !== "c4" ? (
-            <a href={props.link} alt="" target="_blank">
+            <a href={props.link} alt="" target="_blank" rel="noreferrer">
               <button className={classes.content} type="button">
                 <img src={props.image} alt="" />
               </button>
             </a>
           ) : (
-            <a href="RW-Resume-2022.pdf" download="RWang-Resume.pdf">
+            <a href="My-Resume-2023.pdf" download="RWang-Resume.pdf">
               <button className={classes.content} type="button">
                 <img src={props.image} alt="" />
               </button>
