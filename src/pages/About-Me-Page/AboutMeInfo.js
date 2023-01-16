@@ -62,7 +62,7 @@ export const myInfo = [
           </p>
         </div>
 
-        <br></br>
+        
 
         <div className= {classes.white}>
           <p>
@@ -147,7 +147,7 @@ export const myInfo = [
             </p>
           </p>
         </div>
-        <br />
+        
         <div className = {classes.white}>
           <p>
             <h3>Science Olympiad</h3> (January 2017 - March 2021)
@@ -172,7 +172,7 @@ export const myInfo = [
             </p>
           </p>
         </div>
-        <br />
+        
         <div className= {classes.blue}>
           <p>
             <h3>Tutor and tennis coach</h3> (June 2017 - September 2020)
@@ -190,7 +190,7 @@ export const myInfo = [
             </p>
           </p>
         </div>
-        <br />
+        
         <div className= {classes.white}>
           <p>
             <h3>Varsity Tennis Player</h3> (March 2017 - June 2022)
