@@ -3,7 +3,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    border-radius: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    /* border-radius: 20px; */
 }
 
 .blue {
@@ -11,10 +13,13 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    padding-left: 200px;
+    padding-right: 200px;
     
 }
 
 .standard {
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    padding-left: 200px;
 }

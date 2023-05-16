@@ -5,8 +5,8 @@ import {contactInfo} from "./ContactMeInfo"
 function ContactMe() {
   return (
     <section>
-      <h1 style={{ marginTop: 75, marginBottom: 75 }}>
-        You can reach out to me through...
+      <h1 style={{ marginTop: 75, marginBottom: 75, marginLeft:200}}>
+         Contact Info
       </h1>
       <ContactList contacts={contactInfo} />
     </section>

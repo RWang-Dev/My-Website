@@ -21,6 +21,29 @@ export const projectData = [
     },
     {
       id: "p3",
+      title: "Drone Pickup Service",
+      image:
+        "Drone-pickup-service.png",
+      address: "Created with: C++, HTML, JavaScript, Doxygen, Docker, VS Code",
+      description:
+        `Final project for my program design class where my team created an uber style drone pickup service with a 3d frontend map of the UMN campus, with a trip planning UI.\n 
+        Extended front end UI and backend for more features like data collection and energy consumption via batteries`,
+      link: "https://github.com/RWang-Dev/Drone-Pickup-Service",
+    },
+    {
+      id: "p4",
+      title: "Election Voting Processor",
+      image:
+        "Vote_img.jpg",
+      address: "Created with: Java, Junit, Javadoc, VS Code",
+      description:
+        `Final project for my software development class where my team created an election processing program to count votes and find the election
+        winners for instant runoff, closed party listing, and popularity only elections. The program will be able to take in many ballots for processing
+        an election, and will output both a table to the terminal as well as an audit file to store the current election processes and winner.`,
+      link: "https://github.com/RWang-Dev/Election-Voting-Processor",
+    },
+    {
+      id: "p5",
       title: "Unity first person shooter game",
       image: "Game.png",
       address: "Created with: Unity, C#, Visual Studio, Blender",
@@ -29,7 +52,7 @@ export const projectData = [
       link: "https://github.com/RWang-Dev/Unity-First-Person-Shooter-Horror-Game",
     },
     {
-      id: "p4",
+      id: "p6",
       title: "English word generator (Gibberisher)",
       image:
         "https://thumbs.dreamstime.com/b/vector-seamless-pattern-letters-alphabet-random-order-white-background-suitable-web-backgrounds-textiles-85272981.jpg",
@@ -39,7 +62,7 @@ export const projectData = [
       link: "https://github.com/RWang03/Random-Word-Generator",
     },
     {
-      id: "p5",
+      id: "p7",
       title: "Python turtle spaceship game",
       image: "Rocket.png",
       address: "Created with: Python, Turtle, VSCode",

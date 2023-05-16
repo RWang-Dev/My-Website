@@ -9,9 +9,9 @@ export const myInfo = [
     title: null,
     image: "https://pngimg.com/uploads/welcome/welcome_PNG18.png",
     description: (
-      <div>
+      <div style={{paddingLeft:200, paddingRight:200}} >
         <p>
-          My name is Robert, and I am currently a sophomore at the University of Minnesota Twin Cities
+          My name is Robert, and I am currently a rising junior at the University of Minnesota Twin Cities
           studying computer science. I am currently open to any work opportunities,
           so please feel free to find my contact information in the contact me tab up above. This website is 
           where I post many things about me, like the projects that I've worked on, past experiences, and updated links to my GitHub code. Please take a look around.
@@ -21,7 +21,7 @@ export const myInfo = [
   },
   {
     id: "m2",
-    title: <h2>My education</h2>,
+    title: <h2>My Education</h2>,
     image: null,
     description: (
       <div >
@@ -37,25 +37,32 @@ export const myInfo = [
               <i>Relevant coursework</i>
             </h4>
             <div style={{marginLeft: 40}}>
-            
+            <p>
+              <b>CSCI 5801</b> (Software Engineering)
+            </p>
+            <p>
+              <b>CSCI 4041</b> (Alogirhtms and Data Structures)
+            </p>
+            <p>
+              <b>CSCI 2021</b> (Machine Architecture and Organization)
+            </p>
+            <p>
+              <b>CSCI 3081W</b> (Program Design and Development)
+            </p>
             <p>
               <b>CSCI 1133</b> (Introduction to Python)
             </p>
             <p>
-              <b>CSCI 1913</b> (Introduction to Algorithms and Data Structures
-              (Python and Java))
-            </p>
-            <p>
               <b>CSCI 2011</b> (Discrete Mathematics)
-            </p>
-            <p>
-              <b>CSCI 2021</b> (Machine Architecture and Organization)
             </p>
             <p>
               <b>CSCI 2033</b> (Elementary Linear Algebra)
             </p>
             <p>
               <b>CSCI 2041</b> (Advanced Programming Principles)
+            </p>
+            <p>
+              <b>CSCI 5302</b> (Analysis of Numerical Algorithms)
             </p>
             </div>
             
@@ -64,7 +71,7 @@ export const myInfo = [
 
         
 
-        <div className= {classes.white}>
+        <div className= {classes.blue}>
           <p>
             <h3>Minnetonka High School</h3> (September 2017 - June 2021)
             
@@ -106,18 +113,17 @@ export const myInfo = [
     title: <h2>Relevant skills</h2>,
     image: null,
     description: (
-      <div>
-        <b>Programming Languages: </b> Python, Java, HTML, CSS, C, OCaml, C#, 
-        Javascript, X86-64 assembly
+      <div className = {classes.white}>
+        <b>Programming Languages: </b> Python, Java, HTML, CSS, C#, C/C++, JavaScript, OCaml, x86-64 Assembly
         <br />
-        <b>Software & Tools: </b> Visual Studio Code, ReactJS, Unity Engine, Blender 3D,
-        Terminal, GitHub, Git, Flask, Visual Studio
+        <b>Software & Tools: </b> Visual Studio Code, IntelliJ IDEA, ReactJS, GitHub, Git, Docker, Doxygen, Azure, Unity Engine, Linux, Blender 3D,
+        Terminal, Flask, Visual Studio
       </div>
     ),
   },
   {
     id: "m3",
-    title: <h2>Work and extracurriculars</h2>,
+    title: <h2 >Work and Extracurriculars</h2>,
     image: null,
     description: (
       <div>
@@ -190,8 +196,23 @@ export const myInfo = [
             </p>
           </p>
         </div>
-        
         <div className= {classes.white}>
+          <p>
+            <h3>VANTAGE Global Business</h3> (March 2019 - June 2020)
+            <p>
+            Participated in my high school's VANTAGE program to work with local businesses on real world issues that are affecting business activities
+            </p>
+            <br />
+            
+            <b>Tasks my team faced</b>
+            <p style = {{marginLeft: 40}}>
+            • Had to design a new product that solved previously problematic features
+              <br /> • Maintained communication with the owners of these local businesses and had regular in person meetings
+              <br />• Collected data on customers and presented new found data which helped these businesses during quarantine times.
+            </p>
+          </p>
+        </div>
+        <div className= {classes.blue}>
           <p>
             <h3>Varsity Tennis Player</h3> (March 2017 - June 2022)
             <p>

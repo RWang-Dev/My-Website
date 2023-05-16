@@ -21,7 +21,7 @@ function AboutMeItem(props) {
     return (
       <li className={classes.item}>
         <Card className={classes.card}>
-          <hr className={classes.hr} />
+          {/* <hr className={classes.hr} /> */}
           <div className={classes.info}>
             <h3 className={classes.actions}>{props.title}</h3>
             <address>{props.address}</address>
