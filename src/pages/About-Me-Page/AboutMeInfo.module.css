@@ -16,10 +16,26 @@
     /* border-radius: 20px; */
     padding-left: 200px;
     padding-right: 200px;
+    margin: 0;
     
 }
+
+p{
+    margin-top:0;
+}
+
 
 .standard {
     /* padding-left: 20px; */
     padding-left: 200px;
+}
+
+.hr_work{
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    border: none;
+    background-color: black;
+    align-self: center;
+    width: 100px;
 }

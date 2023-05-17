@@ -21,7 +21,7 @@ export const myInfo = [
   },
   {
     id: "m2",
-    title: <h2>My Education</h2>,
+    title: <h2 className={classes.blue}>My Education</h2>,
     image: null,
     description: (
       <div >
@@ -123,7 +123,7 @@ export const myInfo = [
   },
   {
     id: "m3",
-    title: <h2 >Work and Extracurriculars</h2>,
+    title: <h2 className={classes.blue}>Work and Extracurriculars</h2>,
     image: null,
     description: (
       <div>
@@ -154,7 +154,7 @@ export const myInfo = [
           </p>
         </div>
         
-        <div className = {classes.white}>
+        <div className = {classes.blue}>
           <p>
             <h3>Science Olympiad</h3> (January 2017 - March 2021)
             <p>
@@ -196,7 +196,7 @@ export const myInfo = [
             </p>
           </p>
         </div>
-        <div className= {classes.white}>
+        <div className= {classes.blue}>
           <p>
             <h3>VANTAGE Global Business</h3> (March 2019 - June 2020)
             <p>
@@ -212,6 +212,7 @@ export const myInfo = [
             </p>
           </p>
         </div>
+        {/* <hr className={classes.hr_work}/> */}
         <div className= {classes.blue}>
           <p>
             <h3>Varsity Tennis Player</h3> (March 2017 - June 2022)
