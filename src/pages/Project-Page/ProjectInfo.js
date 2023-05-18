@@ -34,7 +34,7 @@ export const projectData = [
       id: "p4",
       title: "Election Voting Processor",
       image:
-        "Vote_img.jpg",
+        "Vote_img.png",
       address: "Created with: Java, Junit, Javadoc, VS Code",
       description:
         `Final project for my software development class where my team created an election processing program to count votes and find the election
@@ -55,7 +55,7 @@ export const projectData = [
       id: "p6",
       title: "English word generator (Gibberisher)",
       image:
-        "https://thumbs.dreamstime.com/b/vector-seamless-pattern-letters-alphabet-random-order-white-background-suitable-web-backgrounds-textiles-85272981.jpg",
+        "Gibberisher_example.png",
       address: "Created with: Java, VSCode",
       description:
         "The Gibberisher program is built and run directly in Visual Studio Code. The program takes a full dictionary of any English like/alphabet present languages, sorts through the data, trains an AI on the grammar rules, and returns gibberish words that perfectly follows said phonetic rules of that language",

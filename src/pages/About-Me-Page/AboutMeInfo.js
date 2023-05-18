@@ -10,12 +10,12 @@ export const myInfo = [
     image: "https://pngimg.com/uploads/welcome/welcome_PNG18.png",
     description: (
       <div style={{paddingLeft:200, paddingRight:200}} >
-        <p>
+        <p><b>
           My name is Robert, and I am currently a rising junior at the University of Minnesota Twin Cities
           studying computer science. I am currently open to any work opportunities,
           so please feel free to find my contact information in the contact me tab up above. This website is 
           where I post many things about me, like the projects that I've worked on, past experiences, and updated links to my GitHub code. Please take a look around.
-        </p>
+        </b></p>
       </div>
     ),
   },

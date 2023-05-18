@@ -11,10 +11,14 @@
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   float: top;
+  text-align: center;
+  
 }
 
 .image img {
-  width: 100%;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
   object-fit: cover;
 }
 
