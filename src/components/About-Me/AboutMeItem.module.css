@@ -15,11 +15,28 @@
   
 }
 
+
+.image_opener{
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background-image: url("../../../public/Opener.jpg");
+  box-shadow: 0 0 30px 30px #05004e inset;
+  /* position: relative; */
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
 .image img {
   width: 75%;
   margin-right: auto;
   margin-left: auto;
   object-fit: cover;
+
 }
 
 .content {
@@ -59,6 +76,8 @@
 
 .card {
   background-color: transparent;
+  width: auto;
+  height: auto;
 }
 
 .info {

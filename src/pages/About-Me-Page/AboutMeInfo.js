@@ -5,9 +5,17 @@ import SkillsChart from "./SkillsChart";
 // exports an array constant containing all of my info in this separate file
 export const myInfo = [
   {
+    id: "m0",
+    title: null,
+    image: "Opener.jpg",
+    description: (
+      <div></div>
+    ),
+  },
+  {
     id: "m1",
     title: null,
-    image: "https://pngimg.com/uploads/welcome/welcome_PNG18.png",
+    image: null,
     description: (
       <div style={{paddingLeft:200, paddingRight:200}} >
         <p><b>
@@ -80,9 +88,12 @@ export const myInfo = [
             <br />
             
             <b>Overall GPA:</b> 4.4
+            <br/>
+            <br/>
             <p><b>
                   Awards</b>
               </p>
+
             <div style={{ marginLeft: 40}}>
               
               <p>
@@ -110,14 +121,23 @@ export const myInfo = [
   },
   {
     id: "m4",
-    title: <h2>Relevant skills</h2>,
+    title: <h2 className={classes.white}>Relevant skills</h2>,
     image: null,
     description: (
       <div className = {classes.white}>
+      <div >
         <b>Programming Languages: </b> Python, Java, HTML, CSS, C#, C/C++, JavaScript, OCaml, x86-64 Assembly
+        <br/>
         <br />
-        <b>Software & Tools: </b> Visual Studio Code, IntelliJ IDEA, ReactJS, GitHub, Git, Docker, Doxygen, Azure, Unity Engine, Linux, Blender 3D,
-        Terminal, Flask, Visual Studio
+        <b>Software & Tools: </b> Visual Studio Code, IntelliJ IDEA, Visual Studio, ReactJS, GitHub, Git, Docker, Doxygen, Azure, Unity Engine, Linux, Blender 3D,
+        Terminal, Flask
+        <br/>
+        <br/>
+      </div>
+      <div className={classes.wakatime}>
+        <img className={classes.wakatime_stats} src="https://github-readme-stats.vercel.app/api/wakatime?username=RWang&theme=radical&layout=compact" alt=""/>
+      </div>
+      
       </div>
     ),
   },
@@ -135,7 +155,6 @@ export const myInfo = [
             I worked for the UMN Physics Department at the Physics and Nanotechnology building to build an electron detector that plays a crucial part in the whole experiment at Fermilab. 
             To efficiently build such intricate and fragile parts for an electron detector, I had to learn how to use many custom-made tools and software to provide detailed data on each part that I produced.
             </p>
-            <br />
             
             <b>Particular duties included</b>
             <p style = {{marginLeft: 40}}>
@@ -164,7 +183,6 @@ export const myInfo = [
             various STEM fields, including earth science, biology, chemistry,
             physics, and engineering.
             </p>
-            <br />
             
             <b>Notable accomplishments and builds</b>
             <p style = {{marginLeft: 40}}>
@@ -186,7 +204,6 @@ export const myInfo = [
             I assisted in the operation of this large-scale summer school and specialized in teaching various subjects of math and science, as well as formulating hands on projects. 
             The tennis program at this camp was also my responsibility, which included advertising on social media about the program and devising optimal training methods.
             </p>
-            <br />
             
             <b>Duties and subjects taught</b>
             <p style = {{marginLeft: 40}}>
@@ -202,8 +219,6 @@ export const myInfo = [
             <p>
             Participated in my high school's VANTAGE program to work with local businesses on real world issues that are affecting business activities
             </p>
-            <br />
-            
             <b>Tasks my team faced</b>
             <p style = {{marginLeft: 40}}>
             • Had to design a new product that solved previously problematic features
@@ -220,7 +235,6 @@ export const myInfo = [
             Participated in the tennis team at Minnetonka High School, one of
             the best teams in the region.
             </p>
-            <br />
             
             <b>My journey on the team</b>
             <p style = {{marginLeft: 40}}>

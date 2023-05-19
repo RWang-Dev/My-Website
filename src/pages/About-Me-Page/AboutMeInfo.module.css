@@ -1,10 +1,11 @@
 .white {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-left: 200px;
     padding-right: 200px;
+    margin: 0;
     /* border-radius: 20px; */
 }
 
@@ -38,4 +39,14 @@ p{
     background-color: black;
     align-self: center;
     width: 100px;
+}
+
+.wakatime{
+    text-align: center;
+}
+
+.wakatime_stats{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:25px;
 }
