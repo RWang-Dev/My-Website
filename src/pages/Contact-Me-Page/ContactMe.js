@@ -1,11 +1,12 @@
 import ContactList from "../../components/Contact-Me/ContactList.js";
 import {contactInfo} from "./ContactMeInfo"
+import classes from "./ContactMe.module.css"
 // Same style of function as the AboutMe Pages
 
 function ContactMe() {
   return (
     <section>
-      <h1 style={{ marginTop: 75, marginBottom: 75, marginLeft:200}}>
+      <h1 className={classes.contactMeTitle}>
          Contact Info
       </h1>
       <ContactList contacts={contactInfo} />

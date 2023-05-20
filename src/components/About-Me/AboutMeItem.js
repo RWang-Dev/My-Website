@@ -7,6 +7,7 @@ function AboutMeItem(props) {
       <li className={classes.item}>
         <Card className={classes.card}>
           <div className={classes.image_opener}>
+            <div className={classes.intro_page}>{props.description}</div>
             {/* <img src={props.image} alt="" /> */}
           </div>
           {/* <div className={classes.info}>
@@ -26,7 +27,9 @@ function AboutMeItem(props) {
             <img src={props.image} alt="" />
           </div>
           <div className={classes.info}>
-            <h3 className={classes.actions}>{props.title}</h3>
+            <div className={classes.actions_container}>
+              <h3 className={classes.actions}>{props.title}</h3>
+            </div>
             <address>{props.address}</address>
             <p>{props.description}</p>
           </div>

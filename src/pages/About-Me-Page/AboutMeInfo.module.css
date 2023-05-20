@@ -9,8 +9,45 @@
     /* border-radius: 20px; */
 }
 
+.intro_name{ 
+    letter-spacing: 1.2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;
+    width: 27ch;
+}
+
+.title_color_gradient{
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
+    background-clip: text;
+    color: transparent;
+    background-color: rgba(33, 65, 248, 0.301);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding-left: 20px;
+    /* border-radius: 20px; 
+    padding-left: 200px;
+    padding-right: 200px; */
+    margin: 0;
+    
+}
+.intro_desc{
+    font-size: 4rem;
+    color: transparent;
+    margin: 1.5rem 0px;
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
+    background-clip: text;
+}
+
+.intro_keywords{
+    text-transform: none;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
 .blue {
-    background-color: rgba(33, 169, 248, 0.301);
+    background-color: rgba(33, 65, 248, 0.301);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;

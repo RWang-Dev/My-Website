@@ -9,7 +9,11 @@ export const myInfo = [
     title: null,
     image: "Opener.jpg",
     description: (
-      <div></div>
+      <div>
+        <h1 className={classes.intro_name}>Robert Wang</h1>
+        <h3 className={classes.intro_desc}>[Computer Science Student]</h3>
+        <p className={classes.intro_keywords}>Web Dev  •  Algorithms  •  C/C++  •  React  •   AI/ML</p>
+      </div>
     ),
   },
   {
@@ -29,7 +33,7 @@ export const myInfo = [
   },
   {
     id: "m2",
-    title: <h2 className={classes.blue}>My Education</h2>,
+    title: <h2 className={classes.title_color_gradient}>My Education</h2>,
     image: null,
     description: (
       <div >
@@ -121,7 +125,7 @@ export const myInfo = [
   },
   {
     id: "m4",
-    title: <h2 className={classes.white}>Relevant skills</h2>,
+    title: <h2 className={classes.title_color_gradient}>Relevant skills</h2>,
     image: null,
     description: (
       <div className = {classes.white}>
@@ -143,7 +147,7 @@ export const myInfo = [
   },
   {
     id: "m3",
-    title: <h2 className={classes.blue}>Work and Extracurriculars</h2>,
+    title: <h2 className={classes.title_color_gradient}>Work and Extracurriculars</h2>,
     image: null,
     description: (
       <div>
