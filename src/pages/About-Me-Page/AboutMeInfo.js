@@ -22,6 +22,7 @@ export const myInfo = [
     image: null,
     description: (
       <div style={{paddingLeft:200, paddingRight:200}} >
+        <h2>H e l l o</h2>
         <p><b>
           My name is Robert, and I am currently a rising junior at the University of Minnesota Twin Cities
           studying computer science. I am currently open to any work opportunities,
@@ -33,13 +34,16 @@ export const myInfo = [
   },
   {
     id: "m2",
-    title: <h2 className={classes.title_color_gradient}>My Education</h2>,
+    title: <div ><h2 className={classes.title_color_gradient}>My Education</h2></div>,
     image: null,
     description: (
       <div >
         <div className={classes.blue}>
           <p>
-            <h3>University of Minnesota Twin Cities</h3> (September 2021 -
+            <h3>University of Minnesota Twin Cities
+            </h3> 
+            <hr className={classes.separationLine_v1}></hr>
+            (September 2021 -
             Current)
             
             <div>Currently pursuing a BS in Computer Science</div>
@@ -85,7 +89,9 @@ export const myInfo = [
 
         <div className= {classes.blue}>
           <p>
-            <h3>Minnetonka High School</h3> (September 2017 - June 2021)
+            <h3>Minnetonka High School</h3>
+            <hr className={classes.separationLine_v1}></hr>
+             (September 2017 - June 2021)
             
             High School Diploma and various college AP and IB credits earned
             through my years studying here.
@@ -153,7 +159,9 @@ export const myInfo = [
       <div>
         <div className = {classes.blue}>
           <p>
-            <h3>Mu2e experiment engineer</h3> (January 2022 - December 2022)
+            <h3>Mu2e experiment engineer</h3> 
+            <hr className={classes.separationLine_v1}></hr>
+            (January 2022 - December 2022)
             <p>
             The Muon-To-Electron Experiment (Mu2e) is a national physics experiment centered at Fermilab aiming to discover physics beyond the standard model. 
             I worked for the UMN Physics Department at the Physics and Nanotechnology building to build an electron detector that plays a crucial part in the whole experiment at Fermilab. 
@@ -179,7 +187,9 @@ export const myInfo = [
         
         <div className = {classes.blue}>
           <p>
-            <h3>Science Olympiad</h3> (January 2017 - March 2021)
+            <h3>Science Olympiad</h3> 
+            <hr className={classes.separationLine_v1}></hr>
+            (January 2017 - March 2021)
             <p>
             In my time in high school, I took part during all four years in my
             school's Science Olympiad team. Science Olympiad is an American team
@@ -203,7 +213,12 @@ export const myInfo = [
         
         <div className= {classes.blue}>
           <p>
-            <h3>Tutor and tennis coach</h3> (June 2017 - September 2020)
+            <h3>Tutor and tennis coach</h3> 
+            <hr className={classes.separationLine_v1}></hr>
+
+            
+            
+            (June 2017 - September 2020)
             <p>
             I assisted in the operation of this large-scale summer school and specialized in teaching various subjects of math and science, as well as formulating hands on projects. 
             The tennis program at this camp was also my responsibility, which included advertising on social media about the program and devising optimal training methods.
@@ -219,7 +234,10 @@ export const myInfo = [
         </div>
         <div className= {classes.blue}>
           <p>
-            <h3>VANTAGE Global Business</h3> (March 2019 - June 2020)
+            <h3>VANTAGE Global Business</h3> 
+            <hr className={classes.separationLine_v1}></hr>
+
+            (March 2019 - June 2020)
             <p>
             Participated in my high school's VANTAGE program to work with local businesses on real world issues that are affecting business activities
             </p>
@@ -234,7 +252,10 @@ export const myInfo = [
         {/* <hr className={classes.hr_work}/> */}
         <div className= {classes.blue}>
           <p>
-            <h3>Varsity Tennis Player</h3> (March 2017 - June 2022)
+            <h3>Varsity Tennis Player</h3> 
+            <hr className={classes.separationLine_v1}></hr>
+
+            (March 2017 - June 2022)
             <p>
             Participated in the tennis team at Minnetonka High School, one of
             the best teams in the region.
