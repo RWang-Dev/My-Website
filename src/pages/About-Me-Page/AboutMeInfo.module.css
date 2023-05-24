@@ -1,11 +1,6 @@
 .white {
     background-color: rgba(255, 255, 255, 0);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    
+    padding-top: 2vh;
     /* border-radius: 20px; */
 }
 
@@ -25,13 +20,10 @@
     color: transparent;
     display: inline-block;
     background-color: rgba(33, 65, 248, 0.301);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /* padding-left: 20px;
-    /* border-radius: 20px; 
-    padding-left: 200px;
-    padding-right: 200px; */
     margin: 0;
+    margin-bottom: 2vh;
+    width: auto;
+    
     
 }
 .title_color_gradient_v2{
@@ -56,12 +48,12 @@
 }
 .blue {
     background-color: rgba(33, 65, 248, 0.301);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    
     /* border-radius: 20px; */
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     margin: 0;
     
 }
@@ -71,10 +63,10 @@ p{
 }
 
 
-.standard {
+/* .standard { */
     /* padding-left: 20px; */
-    padding-left: 200px;
-}
+    /* padding-left: 200px;
+} */
 
 .hr_work{
     margin: 0;
@@ -93,15 +85,17 @@ p{
 .wakatime_stats{
     margin-left: auto;
     margin-right: auto;
-    margin-top:25px;
+    margin-top:5vh;
+    width: 33vw;
 }
 
 .separationLine_v1{
     background: linear-gradient(to right, rgb(0, 255, 234) 0%, rgb(133, 51, 153) 100%);
     border: 0px;
     height: 2px;
+    margin: 0;
     margin-bottom: 1rem;    
-    width: 300px;
+    width: 15vw;
     margin-left:0px;
     
 }
@@ -109,19 +103,69 @@ p{
 .skills_table{
     
     display: inline-block;
-    width: 500px;
+    width: 25vw;
     vertical-align: top;
     text-align: left;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .skills_item{
     background: rgba(51, 128, 128, 0.781);
     display: inline-block;
-    padding: 7px;
+    padding: 0.3rem;
     border-radius: 5px;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
-    font-size: 14px;
+    font-size: 1rem;
+    margin: 4px;
 }
+
+@media screen and (max-width: 480px) {
+  
+    .intro_name{ 
+        font-size: 1rem;
+    }
+    .intro_desc{
+        font-size: 2rem;
+    }
+    
+    .intro_keywords{
+        font-size: 0.7rem; 
+    }
+    .skills_table{
+        display: inline-block;
+        width: 75vw;
+    }
+    .wakatime_stats{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:5vh;
+        width: 85vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    .intro_name{   
+        font-size: 1.5rem;  
+    }
+    .intro_desc{
+        font-size: 2.5rem;    
+    }
+    .intro_keywords{
+        font-size: 1.2rem;   
+    }
+    .skills_table{
+        display: inline-block;
+        width: 75vw;
+    }
+
+    .wakatime_stats{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:5vh;
+        width: 75vw;
+    }
+  }
+  

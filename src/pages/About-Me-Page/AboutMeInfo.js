@@ -21,7 +21,7 @@ export const myInfo = [
     title: null,
     image: null,
     description: (
-      <div style={{paddingLeft:200, paddingRight:200}} >
+      <div style={{paddingLeft:"10vw", paddingRight:"10vw"}} >
         <h2 style={{color: "lightblue"}}>H e l l o</h2>
         <p><b>
           My name is Robert, and I am currently a rising junior at the University of Minnesota Twin Cities
