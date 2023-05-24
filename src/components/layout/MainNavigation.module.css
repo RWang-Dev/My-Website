@@ -38,7 +38,8 @@
 .header a:hover,
 .header a:active,
 .header a.active {
-  color: white;
+  color: purple;
+  font-weight: bold;
 }
 
 .badge {

@@ -5,7 +5,7 @@ import classes from "./Projects.module.css";
 function ProjectsPage() {
   return (
     <section>
-      <h1 className={classes.projectTitle} >My Projects</h1>
+      <h1 className={classes.project_header} >My Projects</h1>
       <ProjectList meetups={projectData} />
     </section>
   );

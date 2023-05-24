@@ -1,4 +1,4 @@
-.projectTitle{
+.project_header{
     margin-top: 100px;
     margin-left: 200px;
     margin-right: 0px;
@@ -8,3 +8,18 @@
     background-clip: text;
     color: transparent;
 }
+
+.project_title{
+    color: lightblue;
+}
+
+.used_item{
+    background: rgba(51, 128, 128, 0.781);
+    display: inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+

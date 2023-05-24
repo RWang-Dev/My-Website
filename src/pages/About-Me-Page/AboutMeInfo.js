@@ -1,4 +1,4 @@
-import React from "react";
+import React, { cloneElement } from "react";
 import classes from "./AboutMeInfo.module.css";
 import SkillsChart from "./SkillsChart";
 
@@ -22,12 +22,12 @@ export const myInfo = [
     image: null,
     description: (
       <div style={{paddingLeft:200, paddingRight:200}} >
-        <h2>H e l l o</h2>
+        <h2 style={{color: "lightblue"}}>H e l l o</h2>
         <p><b>
           My name is Robert, and I am currently a rising junior at the University of Minnesota Twin Cities
           studying computer science. I am currently open to any work opportunities,
-          so please feel free to find my contact information in the contact me tab up above. This website is 
-          where I post many things about me, like the projects that I've worked on, past experiences, and updated links to my GitHub code. Please take a look around.
+          so please feel free to contact me anytime regarding such opportunities. This website is 
+          where I post many things about me, like the projects that I've worked on, past experiences, and updated links to my GitHub code. Please take a look around!
         </b></p>
       </div>
     ),
@@ -40,45 +40,45 @@ export const myInfo = [
       <div >
         <div className={classes.blue}>
           <p>
-            <h3>University of Minnesota Twin Cities
+            <h3 className={classes.title_color_gradient_v2}>University of Minnesota Twin Cities
             </h3> 
             <hr className={classes.separationLine_v1}></hr>
-            (September 2021 -
-            Current)
+            <span className={classes.skills_item}>September 2021 - Current</span>
+            
             
             <div>Currently pursuing a BS in Computer Science</div>
             <b>Tech GPA:</b> 4.0
 
             <h4>
-              <i>Relevant coursework</i>
+              <i className={classes.title_color_gradient_v2}>Relevant coursework</i>
             </h4>
             <div style={{marginLeft: 40}}>
             <p>
-              <b>CSCI 5801</b> (Software Engineering)
+              <b>CSCI 5801</b> Software Engineering
             </p>
             <p>
-              <b>CSCI 4041</b> (Alogirhtms and Data Structures)
+              <b>CSCI 4041</b> Alogrithms and Data Structures
             </p>
             <p>
-              <b>CSCI 2021</b> (Machine Architecture and Organization)
+              <b>CSCI 2021</b> Machine Architecture and Organization
             </p>
             <p>
-              <b>CSCI 3081W</b> (Program Design and Development)
+              <b>CSCI 3081W</b> Program Design and Development
             </p>
             <p>
-              <b>CSCI 1133</b> (Introduction to Python)
+              <b>CSCI 1133</b> Introduction to Python
             </p>
             <p>
-              <b>CSCI 2011</b> (Discrete Mathematics)
+              <b>CSCI 2011</b> Discrete Mathematics
             </p>
             <p>
-              <b>CSCI 2033</b> (Elementary Linear Algebra)
+              <b>CSCI 2033</b> Elementary Linear Algebra
             </p>
             <p>
-              <b>CSCI 2041</b> (Advanced Programming Principles)
+              <b>CSCI 2041</b> Advanced Programming Principles
             </p>
             <p>
-              <b>CSCI 5302</b> (Analysis of Numerical Algorithms)
+              <b>CSCI 3021</b> Statistics
             </p>
             </div>
             
@@ -89,10 +89,10 @@ export const myInfo = [
 
         <div className= {classes.blue}>
           <p>
-            <h3>Minnetonka High School</h3>
+            <h3 className={classes.title_color_gradient_v2}>Minnetonka High School</h3>
             <hr className={classes.separationLine_v1}></hr>
-             (September 2017 - June 2021)
-            
+            <span className={classes.skills_item}>September 2017 - June 2021</span>
+            <br/>
             High School Diploma and various college AP and IB credits earned
             through my years studying here.
             <br />
@@ -100,7 +100,7 @@ export const myInfo = [
             <b>Overall GPA:</b> 4.4
             <br/>
             <br/>
-            <p><b>
+            <p><b className={classes.title_color_gradient_v2}>
                   Awards</b>
               </p>
 
@@ -135,14 +135,42 @@ export const myInfo = [
     image: null,
     description: (
       <div className = {classes.white}>
-      <div >
-        <b>Programming Languages: </b> Python, Java, HTML, CSS, C#, C/C++, JavaScript, OCaml, x86-64 Assembly
-        <br/>
-        <br />
-        <b>Software & Tools: </b> Visual Studio Code, IntelliJ IDEA, Visual Studio, ReactJS, GitHub, Git, Docker, Doxygen, Azure, Unity Engine, Linux, Blender 3D,
-        Terminal, Flask
-        <br/>
-        <br/>
+      <div style={{textAlign: "center", width: "100%"}}>
+        <div className={classes.skills_table}>
+          <b className={classes.title_color_gradient_v2}>Programming Languages: </b> <br/> 
+            <span className={classes.skills_item}>Python</span> 
+            <span className={classes.skills_item}>Java</span>
+            <span className={classes.skills_item}>HTML</span>
+            <span className={classes.skills_item}>CSS</span> 
+            <span className={classes.skills_item}>C#</span>
+            <span className={classes.skills_item}>C/C++</span> 
+            <span className={classes.skills_item}>JavaScript</span>
+            <span className={classes.skills_item}>OCaml</span>
+            <span className={classes.skills_item}>X86-64 Assembly</span>
+        </div>
+        <div className={classes.skills_table}>
+          <b className={classes.title_color_gradient_v2}>Software & Tools: </b> <br/> 
+            <span className={classes.skills_item}>Visual Studio Code</span> 
+            <span className={classes.skills_item}>IntelliJ IDEA</span> 
+            <span className={classes.skills_item}>Visual Studio</span> 
+            <span className={classes.skills_item}>ReactJS</span> 
+            <span className={classes.skills_item}>GitHub</span>
+            <span className={classes.skills_item}>Git</span> 
+            <span className={classes.skills_item}>Docker</span> 
+            <span className={classes.skills_item}>Doxygen</span> 
+            <span className={classes.skills_item}>Azure</span> 
+            <span className={classes.skills_item}>Unity Engine</span> 
+            <span className={classes.skills_item}>Linux</span> 
+            <span className={classes.skills_item}>Blender 3D</span>
+            <span className={classes.skills_item}>Terminal</span> 
+            <span className={classes.skills_item}>Flask</span>
+        </div>
+        
+        {/* <br/>
+        <br /> */}
+        
+        {/* <br/>
+        <br/> */}
       </div>
       <div className={classes.wakatime}>
         <img className={classes.wakatime_stats} src="https://github-readme-stats.vercel.app/api/wakatime?username=RWang&theme=radical&layout=compact" alt=""/>
@@ -159,23 +187,24 @@ export const myInfo = [
       <div>
         <div className = {classes.blue}>
           <p>
-            <h3>Mu2e experiment engineer</h3> 
+            <h3 className={classes.title_color_gradient_v2}>Mu2e experiment engineer</h3> 
             <hr className={classes.separationLine_v1}></hr>
-            (January 2022 - December 2022)
+            <span className={classes.skills_item}>January 2022 - December 2022</span>
+
             <p>
             The Muon-To-Electron Experiment (Mu2e) is a national physics experiment centered at Fermilab aiming to discover physics beyond the standard model. 
             I worked for the UMN Physics Department at the Physics and Nanotechnology building to build an electron detector that plays a crucial part in the whole experiment at Fermilab. 
             To efficiently build such intricate and fragile parts for an electron detector, I had to learn how to use many custom-made tools and software to provide detailed data on each part that I produced.
             </p>
             
-            <b>Particular duties included</b>
+            <b className={classes.title_color_gradient_v2}>Particular duties included</b>
             <p style = {{marginLeft: 40}}>
                • Working with micro-scale equipment and materials to construct
               detailed mechanical parts. 
               <br /> 	• Using highly precise
               measurement tools to record and manage data. 
               <br /> 	• Organized
-              Excel data to optimize the runtime of the scripts use to manage
+              Excel data to optimize the runtime of the scripts used to manage
               the database. 
               <br /> 	• Teamwork oriented tasks at every step, in
               order to coordinate very specific actions. 
@@ -187,18 +216,18 @@ export const myInfo = [
         
         <div className = {classes.blue}>
           <p>
-            <h3>Science Olympiad</h3> 
+            <h3 className={classes.title_color_gradient_v2}>Science Olympiad</h3> 
             <hr className={classes.separationLine_v1}></hr>
-            (January 2017 - March 2021)
+            <span className={classes.skills_item}>January 2017 - March 2021</span>
             <p>
-            In my time in high school, I took part during all four years in my
+            In high school, I took part during all four years in my
             school's Science Olympiad team. Science Olympiad is an American team
             competition in which students compete in 23 events pertaining to
             various STEM fields, including earth science, biology, chemistry,
             physics, and engineering.
             </p>
             
-            <b>Notable accomplishments and builds</b>
+            <b className={classes.title_color_gradient_v2}>Notable accomplishments and builds</b>
             <p style = {{marginLeft: 40}}>
             • Won 3rd at a state competition by built a completely mechanical
               "gravity vehicle", which would use gravity from a set ramp height,
@@ -213,55 +242,53 @@ export const myInfo = [
         
         <div className= {classes.blue}>
           <p>
-            <h3>Tutor and tennis coach</h3> 
+            <h3 className={classes.title_color_gradient_v2}>Tutor and tennis coach</h3> 
             <hr className={classes.separationLine_v1}></hr>
+            <span className={classes.skills_item}>June 2017 - September 2020</span>
 
-            
-            
-            (June 2017 - September 2020)
             <p>
             I assisted in the operation of this large-scale summer school and specialized in teaching various subjects of math and science, as well as formulating hands on projects. 
             The tennis program at this camp was also my responsibility, which included advertising on social media about the program and devising optimal training methods.
             </p>
             
-            <b>Duties and subjects taught</b>
+            <b className={classes.title_color_gradient_v2}>Duties and subjects taught</b>
             <p style = {{marginLeft: 40}}>
             • Dedicated over 200 hours volunteering and working at this camp tutoring students of all ages in STEM subjects and worked to advertise and manage the tennis program
               <br /> • Connected with other businesses and professional individuals to support the camp 
-              <br /> • Earned the Gold President's volunteer service award in my sophomore year <br />
+              <br /> • Earned the Gold President's volunteer service award in my sophomore year for over 100 hours of volunteering <br />
             </p>
           </p>
         </div>
         <div className= {classes.blue}>
           <p>
-            <h3>VANTAGE Global Business</h3> 
+            <h3 className={classes.title_color_gradient_v2}>VANTAGE Global Business</h3> 
             <hr className={classes.separationLine_v1}></hr>
+            <span className={classes.skills_item}>March 2019 - June 2020</span>
 
-            (March 2019 - June 2020)
             <p>
             Participated in my high school's VANTAGE program to work with local businesses on real world issues that are affecting business activities
             </p>
-            <b>Tasks my team faced</b>
+            <b className={classes.title_color_gradient_v2}>Tasks my team faced</b>
             <p style = {{marginLeft: 40}}>
             • Had to design a new product that solved previously problematic features
               <br /> • Maintained communication with the owners of these local businesses and had regular in person meetings
-              <br />• Collected data on customers and presented new found data which helped these businesses during quarantine times.
+              <br />• Collected data on customers and presented new found data which helped these businesses during pandemic times.
             </p>
           </p>
         </div>
         {/* <hr className={classes.hr_work}/> */}
         <div className= {classes.blue}>
           <p>
-            <h3>Varsity Tennis Player</h3> 
+            <h3 className={classes.title_color_gradient_v2}>Varsity Tennis Player</h3> 
             <hr className={classes.separationLine_v1}></hr>
+            <span className={classes.skills_item}>March 2017 - June 2022</span>
 
-            (March 2017 - June 2022)
             <p>
             Participated in the tennis team at Minnetonka High School, one of
             the best teams in the region.
             </p>
             
-            <b>My journey on the team</b>
+            <b className={classes.title_color_gradient_v2}>My journey on the team</b>
             <p style = {{marginLeft: 40}}>
             • Went undefeated on my first year on the JV team, and played the
               top spot for my team.
