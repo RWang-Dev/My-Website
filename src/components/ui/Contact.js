@@ -2,7 +2,7 @@ import classes from "./Contact.module.css";
 
 function Contact(props) {
   return (
-    <div className="centerDiv">
+    <div className={classes.centerDiv}>
       <div className={classes.contactDiv}>
         <div className={classes.flex}>
           {props.id !== "c4" ? (

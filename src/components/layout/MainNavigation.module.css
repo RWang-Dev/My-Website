@@ -26,7 +26,8 @@
 }
 
 .header li {
-  margin-left: 3rem;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
 }
 
 .header a {
@@ -54,7 +55,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 200px) and (max-width: 480px) {
   .logo {
     font-size: 0;
     width: 0;
@@ -62,13 +63,29 @@
     margin: 0;
     padding: 0;
   }
+  .header a {
+    font-size: 1.2rem;
+  }
+  .header {
+    
+    text-align: center;
+    justify-content: center;
+    
+  }
+  .header li {
+    margin-right: 2.5vw;
+    margin-left: 2.5vw;
+  }
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px){
   .logo {
     font-size: 2rem;
     color: white;
     font-weight: bold;
+  }
+  .header li {
+    margin-right: 2vw;
   }
 }

@@ -1,42 +1,46 @@
 .contactDiv {
-  margin-left: -36px;
-  width: auto;
-  max-width: 1000px;
-  margin: auto;
+  
+  max-width: 60vw;
+  width: 60vw;
   background-color: rgba(33, 169, 248, 0.301);
-  border-radius: 20px;
-  margin-bottom: 50px;
+  border-radius: 1.5vw;
+  margin-bottom: 5vh;
 }
 
 .contactDiv button {
-  width: 200px;
-  border-radius: 20px;
-  border-color: lightblue;
+  width: 10vw;
+  border-radius: 1.5vw;
+  border: none;
 }
 .contactDiv img {
   display: inline-block;
-  height: 100px;
-  border-radius: 20px;
+  height: 11vh;
+  border-radius: 10vw;
 }
 
 .content {
   display: inline;
+  
 }
 
 .flex {
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.contactBreak {
-  margin-top: 25px;
+/* .contactBreak {
+  margin-top: 2p;
   margin-bottom: 25px;
-}
+} */
 
 .centerDiv {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 button:hover {
@@ -51,4 +55,49 @@ button:active {
   margin-left: auto;
   margin-right: auto;
   font-weight: bold;
+}
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  .contactDiv {
+  
+    /* width: auto; */
+    max-width: 80vw;
+    width: 80vw;
+  
+    
+  }
+  .contactDiv button {
+    width: 20vw;
+    border-radius: 1.5vw;
+    border: none;
+  }
+  .contactDiv img {
+    display: inline-block;
+    height: 6vh;
+    border-radius: 10vw;
+  }
+  
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 850px) {
+  .contactDiv {
+  
+    /* width: auto; */
+    max-width: 80vw;
+    width: 80vw;
+  
+    
+  }
+  .contactDiv button {
+    width: 20vw;
+    border-radius: 1.5vw;
+    border: none;
+  }
+  .contactDiv img {
+    display: inline-block;
+    height: 6vh;
+    border-radius: 10vw;
+  }
+  
 }

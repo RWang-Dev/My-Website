@@ -1,9 +1,10 @@
 .contactMeTitle{
-    margin-top: 100px;
-    margin-left: 200px;
-    margin-right: 0px;
-    padding-right: 0px;
-    width: 300px;
+    margin: 0;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+    margin-left: 10vw;
+    padding: 0px;
+    display: inline-block;
     background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
     background-clip: text;
     color: transparent;

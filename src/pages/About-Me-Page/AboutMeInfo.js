@@ -52,7 +52,7 @@ export const myInfo = [
             <h4>
               <i className={classes.title_color_gradient_v2}>Relevant coursework</i>
             </h4>
-            <div style={{marginLeft: 40}}>
+            <div style={{marginLeft: 20}}>
             <p>
               <b>CSCI 5801</b> Software Engineering
             </p>
@@ -104,7 +104,7 @@ export const myInfo = [
                   Awards</b>
               </p>
 
-            <div style={{ marginLeft: 40}}>
+            <div style={{ marginLeft: 20}}>
               
               <p>
                 Summa Cum Laude
@@ -198,17 +198,17 @@ export const myInfo = [
             </p>
             
             <b className={classes.title_color_gradient_v2}>Particular duties included</b>
-            <p style = {{marginLeft: 40}}>
-               • Working with micro-scale equipment and materials to construct
+            <p >
+               • &nbsp; Working with micro-scale equipment and materials to construct
               detailed mechanical parts. 
-              <br /> 	• Using highly precise
+              <br /> 	• &nbsp; Using highly precise
               measurement tools to record and manage data. 
-              <br /> 	• Organized
+              <br /> 	• &nbsp; Organized
               Excel data to optimize the runtime of the scripts used to manage
               the database. 
-              <br /> 	• Teamwork oriented tasks at every step, in
+              <br /> 	• &nbsp; Teamwork oriented tasks at every step, in
               order to coordinate very specific actions. 
-              <br /> 	• Mastered a
+              <br /> 	• &nbsp; Mastered a
               production method and led the training for that process.
             </p>
           </p>
@@ -228,13 +228,13 @@ export const myInfo = [
             </p>
             
             <b className={classes.title_color_gradient_v2}>Notable accomplishments and builds</b>
-            <p style = {{marginLeft: 40}}>
-            • Won 3rd at a state competition by built a completely mechanical
+            <p >
+            • &nbsp; Won 3rd at a state competition by built a completely mechanical
               "gravity vehicle", which would use gravity from a set ramp height,
               along with a braking mechanism to stop at a variable distance.
-              <br /> • Programed an TI-Innovator hub to detect minute changes in
+              <br /> • &nbsp; Programed an TI-Innovator hub to detect minute changes in
               fluid temperature
-              <br /> • Worked my way up to become an integral
+              <br /> • &nbsp; Worked my way up to become an integral
               part of the build team <br />
             </p>
           </p>
@@ -252,10 +252,10 @@ export const myInfo = [
             </p>
             
             <b className={classes.title_color_gradient_v2}>Duties and subjects taught</b>
-            <p style = {{marginLeft: 40}}>
-            • Dedicated over 200 hours volunteering and working at this camp tutoring students of all ages in STEM subjects and worked to advertise and manage the tennis program
-              <br /> • Connected with other businesses and professional individuals to support the camp 
-              <br /> • Earned the Gold President's volunteer service award in my sophomore year for over 100 hours of volunteering <br />
+            <p >
+            • &nbsp; Dedicated over 200 hours volunteering and working at this camp tutoring students of all ages in STEM subjects and worked to advertise and manage the tennis program
+              <br /> • &nbsp; Connected with other businesses and professional individuals to support the camp 
+              <br /> • &nbsp; Earned the Gold President's volunteer service award in my sophomore year for over 100 hours of volunteering <br />
             </p>
           </p>
         </div>
@@ -269,10 +269,10 @@ export const myInfo = [
             Participated in my high school's VANTAGE program to work with local businesses on real world issues that are affecting business activities
             </p>
             <b className={classes.title_color_gradient_v2}>Tasks my team faced</b>
-            <p style = {{marginLeft: 40}}>
-            • Had to design a new product that solved previously problematic features
-              <br /> • Maintained communication with the owners of these local businesses and had regular in person meetings
-              <br />• Collected data on customers and presented new found data which helped these businesses during pandemic times.
+            <p >
+            • &nbsp; Had to design a new product that solved previously problematic features
+              <br /> • &nbsp; Maintained communication with the owners of these local businesses and had regular in person meetings
+              <br />• &nbsp; Collected data on customers and presented new found data which helped these businesses during pandemic times.
             </p>
           </p>
         </div>
@@ -289,12 +289,12 @@ export const myInfo = [
             </p>
             
             <b className={classes.title_color_gradient_v2}>My journey on the team</b>
-            <p style = {{marginLeft: 40}}>
-            • Went undefeated on my first year on the JV team, and played the
+            <p >
+            • &nbsp; Went undefeated on my first year on the JV team, and played the
               top spot for my team.
-              <br /> • Drastically improved my teamwork skills as I followed and
+              <br /> • &nbsp; Drastically improved my teamwork skills as I followed and
               led peers to improve the team's game as a whole 
-              <br />• followed a
+              <br />• &nbsp; followed a
               rigorous schedule in order to get to be one of the top in the
               varsity team.
             </p>

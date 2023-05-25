@@ -5,8 +5,8 @@
 }
 
 .description{
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 .image {
   display: flex;
@@ -18,11 +18,11 @@
 
 .image img {
   height: auto;
-  max-height: 500px;
-  max-width: 600px;
+  max-height: 50vh;
+  max-width: 30vw;
   object-fit: cover;
-  border-radius: 40px;
-  margin-top: 40px;
+  border-radius: 2vw;
+  margin-top: 5vh;
 }
 
 .content {
@@ -62,7 +62,47 @@
 
 .card {
   background-color: rgba(33, 169, 248, 0.301);
-  margin-bottom: 50px;
-  border-radius: 40px;
-  width: 1250px;
+  margin-bottom: 5vh;
+  border-radius: 2vw;
+  width: 65vw;
 }
+
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  
+  .card {
+    background-color: rgba(33, 169, 248, 0.301);
+    margin-bottom: 5vh;
+    border-radius: 2vw;
+    width: 80vw;
+  }
+  .image img {
+    height: auto;
+    max-height: 50vh;
+    max-width: 60vw;
+    object-fit: cover;
+    border-radius: 2vw;
+    margin-top: 5vh;
+  }
+  
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .card {
+    background-color: rgba(33, 169, 248, 0.301);
+    margin-bottom: 5vh;
+    border-radius: 2vw;
+    width: 80vw;
+  }
+  .image img {
+    height: auto;
+    max-height: 50vh;
+    max-width: 50vw;
+    object-fit: cover;
+    border-radius: 2vw;
+    margin-top: 5vh;
+  }
+  
+  
+}
+

@@ -121,31 +121,7 @@ p{
     margin: 4px;
 }
 
-@media screen and (max-width: 480px) {
-  
-    .intro_name{ 
-        font-size: 1rem;
-    }
-    .intro_desc{
-        font-size: 2rem;
-    }
-    
-    .intro_keywords{
-        font-size: 0.7rem; 
-    }
-    .skills_table{
-        display: inline-block;
-        width: 75vw;
-    }
-    .wakatime_stats{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:5vh;
-        width: 85vw;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 480px) {
     
     .intro_name{   
         font-size: 1.5rem;  
@@ -166,6 +142,31 @@ p{
         margin-right: auto;
         margin-top:5vh;
         width: 75vw;
+    }
+  }
+  
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  
+    .intro_name{ 
+        font-size: 1rem;
+    }
+    .intro_desc{
+        font-size: 2rem;
+    }
+    
+    .intro_keywords{
+        font-size: 0.7rem; 
+    }
+    .skills_table{
+        display: inline-block;
+        width: 75vw;
+    }
+    .wakatime_stats{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:5vh;
+        width: 85vw;
     }
   }
   
