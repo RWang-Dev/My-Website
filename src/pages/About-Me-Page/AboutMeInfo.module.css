@@ -11,7 +11,7 @@
     overflow: hidden;
     white-space: nowrap;
     margin: auto;
-    width: 27ch;
+    width: auto;
 }
 
 .title_color_gradient{
@@ -118,13 +118,16 @@ p{
     margin-right: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1rem;
-    margin: 4px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 1vh;
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
     
     .intro_name{   
         font-size: 1.5rem;  
+        width: auto;
     }
     .intro_desc{
         font-size: 2.5rem;    
@@ -143,13 +146,19 @@ p{
         margin-top:5vh;
         width: 75vw;
     }
+    .separationLine_v1{       
+        width: 50vw;
+        
+        
+    }
   }
   
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 850px) {
   
     .intro_name{ 
         font-size: 1rem;
+        width: auto;
     }
     .intro_desc{
         font-size: 2rem;
@@ -166,7 +175,12 @@ p{
         margin-left: auto;
         margin-right: auto;
         margin-top:5vh;
-        width: 85vw;
+        width: 80vw;
+    }
+    .separationLine_v1{
+         
+        width: 20vw;
+        
     }
   }
   

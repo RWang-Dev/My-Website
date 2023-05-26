@@ -2,6 +2,10 @@
   margin: 1rem 0;
   display: flex;
   justify-content: center;
+  width: 40vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  
 }
 
 .description{
@@ -18,8 +22,8 @@
 
 .image img {
   height: auto;
-  max-height: 50vh;
-  max-width: 30vw;
+  max-height: 40vh;
+  max-width: 20vw;
   object-fit: cover;
   border-radius: 2vw;
   margin-top: 5vh;
@@ -65,11 +69,16 @@
   margin-bottom: 5vh;
   border-radius: 2vw;
   width: 65vw;
+  
 }
 
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
-  
+  .item {
+    width: 80vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
   .card {
     background-color: rgba(33, 169, 248, 0.301);
     margin-bottom: 5vh;
@@ -87,7 +96,12 @@
   
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 850px) {
+  .item {
+    width: 80vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
   .card {
     background-color: rgba(33, 169, 248, 0.301);
     margin-bottom: 5vh;

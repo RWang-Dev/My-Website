@@ -2,4 +2,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 850px){
+  
 }
