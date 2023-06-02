@@ -55,6 +55,16 @@
   font-weight: bold;
 }
 
+.logo_color{
+  
+  color: transparent;
+  margin: 1.5rem 0px;
+  background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
+  background-clip: text;
+  display: inline-block;
+}
+
+
 @media screen and (min-width: 200px) and (max-width: 480px) {
   .logo {
     font-size: 0;

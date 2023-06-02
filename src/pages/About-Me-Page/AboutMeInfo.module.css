@@ -39,6 +39,7 @@
     background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
     background-clip: text;
     display: inline-block;
+    
 }
 
 .intro_keywords{
@@ -47,7 +48,7 @@
     font-weight: 400;
 }
 .blue {
-    background-color: rgba(33, 65, 248, 0.301);
+    background-color: rgba(5, 37, 180, 0.301);
     padding-top: 2vh;
     padding-bottom: 2vh;
     
@@ -60,6 +61,7 @@
 
 p{
     margin-top:0;
+    color: white;
 }
 
 

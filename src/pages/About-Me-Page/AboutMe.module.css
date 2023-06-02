@@ -1,0 +1,10 @@
+.footer{
+    text-align: center;
+    color: gray;
+}
+
+.footer_line{
+    border-color: gray;
+    width: 30vw;
+    /* height: 3px; */
+}

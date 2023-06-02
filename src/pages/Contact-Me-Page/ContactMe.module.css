@@ -9,3 +9,153 @@
     background-clip: text;
     color: transparent;
 }
+
+.contactMeDescription{
+    /* margin-left: 20vw; */
+    margin-bottom: 3vh;
+    
+    color: white;
+    
+}
+
+/* .fa-envelope{
+    color: blue;
+
+} */
+
+.media_icons {
+    color: rgb(0, 206, 158);
+    /* margin-left: 20vw; */
+    padding: 0;
+    font-size: 1rem;
+}
+
+.email{
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 3vh;
+    margin-right: 3vw;
+}
+
+.email_contact{
+    display:inline-block;
+    align-items: left;
+    text-align: left;
+    /* width: 30vw; */
+    flex: 50%;
+    margin-right: 2vw;
+
+}
+
+.other_contact{
+    display:inline-block;
+    color: white;
+    flex: 30%;
+    text-align: left;
+    margin-left: 2vw;
+    vertical-align: top;
+}
+
+.contact_layout{
+    width: 80%;
+    
+    text-align: center;
+    
+    display: flex;
+    margin-left: 15vw;
+    /* display: inline-block; */
+    margin-right: 10vw;
+}
+
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-top: 0;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.other_icons{
+    color: rgb(0, 206, 158);
+    /* margin-left: 20vw; */
+    padding: 0;
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 1.5vw;
+    margin-bottom: 1.5vh;
+}
+
+.contact_description{
+    vertical-align: middle;
+
+    color: rgb(0, 206, 158);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+    .contactMeTitle{
+        margin: 0;
+        margin-top: 7vh;
+        margin-bottom: 2vh;
+        /* margin-left: 10vw; */
+        padding: 0px;
+        display: inline-block;
+        background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
+        background-clip: text;
+        color: transparent;
+    }
+    section{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact_layout{
+        width: 80vw;
+        
+        display: inline-block;
+        margin-left: 2vw;
+        /* display: inline-block; */
+        margin-right: 2vw;
+    }
+    .email{
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 3vh;
+        margin-right: 3vw;
+    }
+    .other_icons{
+        color: rgb(0, 206, 158);
+        /* margin-left: 20vw; */
+        padding: 0;
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        margin-left: -30vw;
+        display: inline-block;
+        align-self: left;
+        
+    }
+  }
+  
+
+@media screen and (min-width: 481px) and (max-width: 850px) {
+  
+    .contact_layout{
+        width: 90%;
+        
+        text-align: center;
+        
+        display: flex;
+        margin-left: 6vw;
+        /* display: inline-block; */
+        
+    }
+  }
