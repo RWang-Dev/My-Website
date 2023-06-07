@@ -6,7 +6,8 @@ import classes from "./AboutMe.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faFile} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+
 
 // Implemented Chart JS for future reference when adding graphs to website
 // Needed all of the following imports to actually function
