@@ -137,7 +137,7 @@ export const myInfo = [
       <div className = {classes.white}>
       <div style={{textAlign: "center", width: "100%"}}>
         <div className={classes.skills_table}>
-          <b className={classes.title_color_gradient_v2}>Programming Languages: </b> <br/> 
+          <b className={classes.title_color_gradient_v2} style={{marginBottom: 7}}>Programming Languages: </b> <br/> 
             <span className={classes.skills_item}>Python</span> 
             <span className={classes.skills_item}>Java</span>
             <span className={classes.skills_item}>HTML</span>
@@ -149,7 +149,7 @@ export const myInfo = [
             <span className={classes.skills_item}>X86-64 Assembly</span>
         </div>
         <div className={classes.skills_table}>
-          <b className={classes.title_color_gradient_v2}>Software & Tools: </b> <br/> 
+          <b className={classes.title_color_gradient_v2} style={{marginBottom: 7}}>Software & Tools: </b> <br/> 
             <span className={classes.skills_item}>Visual Studio Code</span> 
             <span className={classes.skills_item}>IntelliJ IDEA</span> 
             <span className={classes.skills_item}>Visual Studio</span> 

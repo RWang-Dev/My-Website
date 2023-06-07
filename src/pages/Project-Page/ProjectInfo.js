@@ -17,7 +17,7 @@ export const projectData = [
       <span className={classes.used_item}>Azure</span> 
       </div>,
       description:
-        "This is my personal website. It is my attempt to integrate my programming knowledge into a web based application. This website will continue to be updated as I progress with my career. Visit anytime at https://www.rwang.us",
+        "This is my personal website. It is my attempt to integrate my programming knowledge into a responsive web based application. Built using ReactJS and deployed to Microsoft Azure This website will continue to be updated as I progress with my career. Visit anytime at https://www.rwang.us",
       link: "https://github.com/RWang-Dev/My-Website",
     },
     {
@@ -52,7 +52,7 @@ export const projectData = [
       
         </div>,
       description:
-        `Final project for my program design class where my team created an uber style drone pickup service with a 3d frontend map of the UMN campus, with a trip planning UI.\n 
+        `Final project for my program design class where my team created an uber style drone pickup service with a 3d frontend map of the University of MN campus, with a trip planning UI.\n 
         Extended front end UI and backend for more features like data collection and energy consumption via batteries`,
       link: "https://github.com/RWang-Dev/Drone-Pickup-Service",
     },

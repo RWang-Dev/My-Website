@@ -5,6 +5,11 @@
 
 .footer_line{
     border-color: gray;
-    width: 30vw;
+    width: 15vw;
     /* height: 3px; */
+}
+
+.icons{
+    margin: 10px;
+    font-size: 1.25rem;
 }
