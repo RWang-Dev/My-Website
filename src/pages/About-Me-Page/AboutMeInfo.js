@@ -158,7 +158,7 @@ export const myInfo = [
             <span className={classes.skills_item}>Git</span> 
             <span className={classes.skills_item}>Docker</span> 
             <span className={classes.skills_item}>Doxygen</span> 
-            <span className={classes.skills_item}>Azure</span> 
+            <span className={classes.skills_item}>Microsoft Azure</span> 
             <span className={classes.skills_item}>Unity Engine</span> 
             <span className={classes.skills_item}>Linux</span> 
             <span className={classes.skills_item}>Blender 3D</span>
@@ -213,7 +213,24 @@ export const myInfo = [
             </p>
           </p>
         </div>
-        
+        <div className= {classes.blue}>
+          <p>
+            <h3 className={classes.title_color_gradient_v2}>Tech Academy Instructor</h3> 
+            <hr className={classes.separationLine_v1}></hr>
+            <span className={classes.skills_item}>May 2023 - Current</span>
+
+            <p>
+            Worked as a teacher at Tech Academy MN during the summer of 2023 to teach students of various ages on subjects such as robotics, Python/Java coding, and game development. 
+            In charge of organizing the environment and topics for each class and managing student and parent files. 
+            </p>
+            
+            <b className={classes.title_color_gradient_v2}>Duties and subjects taught</b>
+            <p >
+            • &nbsp; Taught STEM subjects like coding, software development, and engineering
+              <br /> • &nbsp; Provided a quality classroom experience for students over the summer.  
+            </p>
+          </p>
+        </div>
         <div className = {classes.blue}>
           <p>
             <h3 className={classes.title_color_gradient_v2}>Science Olympiad</h3> 

@@ -12,7 +12,7 @@ function MainNavigation() {
         <ul>
           <li className={classes.title}>
             <Link className={classes.menus} to="/">
-              About Me
+              About
             </Link>
           </li>
           <li className={classes.title}>
@@ -22,7 +22,7 @@ function MainNavigation() {
           </li>
           <li className={classes.title}>
             <Link className={classes.menus} to="/contact-me">
-              Contact Me
+              Contact
             </Link>
           </li>
         </ul>

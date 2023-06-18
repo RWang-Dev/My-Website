@@ -80,7 +80,7 @@ button:active {
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 850px) {
+@media screen and (min-width: 481px) and (max-width: 1080px) {
   .contactDiv {
   
     /* width: auto; */

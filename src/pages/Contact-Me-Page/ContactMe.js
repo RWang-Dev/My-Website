@@ -33,19 +33,19 @@ function ContactMe() {
         </div>
         <div className={classes.other_contact}>
           <div className={classes.contact_description}>
-            <a href="https://github.com/RWang-Dev"><div className={classes.other_icons}><FontAwesomeIcon icon={faGithub} /> </div>
+            <a href="https://github.com/RWang-Dev" target="_blank"><div className={classes.other_icons}><FontAwesomeIcon icon={faGithub} /> </div>
             <span >Check out my code on GitHub</span></a>
             
           </div>
           <div className={classes.contact_description}>
-            <a href="https://www.linkedin.com/in/rwang523">
+            <a href="https://www.linkedin.com/in/rwang523" target="_blank">
               <div className={classes.other_icons}><FontAwesomeIcon icon={faLinkedin} /> </div>
               <span >Visit my Linkedin</span>
             </a>
             
           </div>
           <div className={classes.contact_description}>
-            <a href="My-Resume-2023.pdf" download>
+            <a href="My-Resume-2023.pdf" download >
               <div className={classes.other_icons}><FontAwesomeIcon icon={faFile} /> </div>
               <span >Download my resume here</span>
             </a>

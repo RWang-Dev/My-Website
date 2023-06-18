@@ -156,18 +156,18 @@ p{
   }
   
 
-@media screen and (min-width: 481px) and (max-width: 850px) {
+@media screen and (min-width: 481px) and (max-width: 1080px) {
   
     .intro_name{ 
-        font-size: 1rem;
+        font-size: 1.7rem;
         width: auto;
     }
     .intro_desc{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     .intro_keywords{
-        font-size: 0.7rem; 
+        font-size: 1.5rem; 
     }
     .skills_table{
         display: inline-block;
@@ -177,7 +177,7 @@ p{
         margin-left: auto;
         margin-right: auto;
         margin-top:5vh;
-        width: 80vw;
+        width: 60vw;
     }
     .separationLine_v1{
          

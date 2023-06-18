@@ -97,6 +97,7 @@ a{
     text-decoration: none;
     color: inherit;
     text-decoration: underline;
+    
 }
 
 
@@ -146,7 +147,7 @@ a{
   }
   
 
-@media screen and (min-width: 481px) and (max-width: 850px) {
+@media screen and (min-width: 481px) and (max-width: 1080px) {
   
     .contact_layout{
         width: 90%;
