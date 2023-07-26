@@ -2,7 +2,7 @@
 import classes from "./ContactList.module.css"
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// import { Alert } from 'react-alert'
+
 
 function ContactList(props) {
   const form = useRef();

@@ -189,7 +189,7 @@ export const myInfo = [
           <p>
             <h3 className={classes.title_color_gradient_v2}>Mu2e experiment engineer</h3> 
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>January 2022 - December 2022</span>
+            <span className={classes.skills_item}>January 2022 - March 2023</span>
 
             <p>
             The Muon-To-Electron Experiment (Mu2e) is a national physics experiment centered at Fermilab aiming to discover physics beyond the standard model. 
