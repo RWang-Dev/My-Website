@@ -1,6 +1,6 @@
-import React, { cloneElement } from "react";
+// import React, { cloneElement } from "react";
 import classes from "./AboutMeInfo.module.css";
-import SkillsChart from "./SkillsChart";
+// import SkillsChart from "./SkillsChart";
 
 // exports an array constant containing all of my info in this separate file
 export const myInfo = [
@@ -220,8 +220,10 @@ export const myInfo = [
             <span className={classes.skills_item}>May 2023 - Current</span>
 
             <p>
-            Worked as a teacher at Tech Academy MN during the summer of 2023 to teach students of various ages on subjects such as robotics, Python/Java coding, and game development. 
-            In charge of organizing the environment and topics for each class and managing student and parent files. 
+            Working as a teacher at Tech Academy MN during the summer of 2023 to teach students from 1-10th grade on STEM subjects such as robotics programming, 
+            Python/Java coding, and game development. Additionally, I am tasked with training with new mechanical equipment, designing builds, 
+            and implementing comprehensive curriculum for more hands-on engineering activities including 3D printing, Lego robotics, renewable energy system design, 
+            and video production.
             </p>
             
             <b className={classes.title_color_gradient_v2}>Duties and subjects taught</b>

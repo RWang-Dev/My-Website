@@ -75,7 +75,47 @@ export const projectData = [
     },
     {
       id: "p5",
-      title: <div className={classes.project_title}>Unity First Person Shooting Game</div>,
+      title: <div className={classes.project_title}>
+      Farmsight (Analytics for Good Institute (AGI) Hackathon 2023)</div>,
+      image:
+        "the good Acre.jpg",
+      address: <div>
+      <span className={classes.used_item}>Flask</span> 
+      <span className={classes.used_item}>Python</span>
+      <span className={classes.used_item}>HTML</span>  
+      <span className={classes.used_item}>CSS</span> 
+      <span className={classes.used_item}>Numpy</span> 
+      <span className={classes.used_item}>Pandas</span> 
+
+      </div>,
+      description:
+        `Farmsight is a web application build for analyzing trends within input data. 
+        The user can easily upload CSV files to Farmsight and receive information regarding the sets of data. 
+        In particular, this project is targeting The Good Acre, an organization of farmers and cooks, so that they can tabulate and analyze data 
+        regarding their crop yields and track supply and shipments throughout the year.`,
+      link: "https://github.com/UMN-AGI-Hackathon-2023-FarmSight",
+    },
+    {
+      id: "p6",
+      title: <div className={classes.project_title}>Just Change</div>,
+      image:
+        "Just_Change_icon.ico",
+      address: <div>
+      <span className={classes.used_item}>React</span> 
+      <span className={classes.used_item}>HTML</span>
+      <span className={classes.used_item}>CSS</span>  
+      <span className={classes.used_item}>JavaScript</span> 
+      </div>,
+      description:
+        `First Hackathon project, in which my team was tasked with developing an application to promote civil participation. 
+        Inspired by three popular apps, Tinder, Spotify, and Acorns, 
+        JustChange was developed with a simple UI in mind where the user would swipe left or right to select which charity to donate their spare change money to. 
+        At the end of the year, all the money pledged will be tabulated into a succinct "wrapped" page.`,
+      link: "https://github.com/Minnehack-2023-JustChange",
+    },
+    {
+      id: "p7",
+      title: <div className={classes.project_title}>Unity First Person 3D Game</div>,
       image: "Game.png",
       address: <div>
       <span className={classes.used_item}>Unity</span> 
@@ -85,11 +125,11 @@ export const projectData = [
       
       </div>,
       description:
-        "My first fully functional level in an FPS style game, along with a main menu screen, created using the Unity game engine. All 3d models on the scene was made by me using the Blender modeling software",
+        "My first fully functional level in first person action style game, along with a main menu screen, created using the Unity game engine. All 3d models on the scene was made by me using the Blender modeling software",
       link: "https://github.com/RWang-Dev/Unity-First-Person-Shooter-Horror-Game",
     },
     {
-      id: "p6",
+      id: "p8",
       title: <div className={classes.project_title}>English Word Generator</div>,
       image:
         "Gibberisher_example.png",
@@ -103,7 +143,7 @@ export const projectData = [
       link: "https://github.com/RWang03/Random-Word-Generator",
     },
     {
-      id: "p7",
+      id: "p9",
       title: <div className={classes.project_title}>Python Turtle Spaceship Game</div>,
       image: "Rocket.png",
       address: <div>
