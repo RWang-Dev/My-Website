@@ -78,7 +78,7 @@ export const projectData = [
       title: <div className={classes.project_title}>
       Farmsight (Analytics for Good Institute (AGI) Hackathon 2023)</div>,
       image:
-        "the-good-Acre.jpg",
+        "The-Good-Acre.jpg",
       address: <div>
       <span className={classes.used_item}>Flask</span> 
       <span className={classes.used_item}>Python</span>
