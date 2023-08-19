@@ -34,7 +34,7 @@ export const myInfo = [
   },
   {
     id: "m2",
-    title: <div ><h2 className={classes.title_color_gradient}>My Education</h2></div>,
+    title: <div ><h2 style={{color: "lightblue"}}>My Education</h2></div>,
     image: null,
     description: (
       <div >
@@ -131,7 +131,7 @@ export const myInfo = [
   },
   {
     id: "m4",
-    title: <h2 className={classes.title_color_gradient}>Relevant skills</h2>,
+    title: <h2 style={{color: "lightblue"}}>Relevant skills</h2>,
     image: null,
     description: (
       <div className = {classes.white}>
@@ -181,7 +181,7 @@ export const myInfo = [
   },
   {
     id: "m3",
-    title: <h2 className={classes.title_color_gradient}>Work and Extracurriculars</h2>,
+    title: <h2 style={{color: "lightblue"}}>Work and Extracurriculars</h2>,
     image: null,
     description: (
       <div>

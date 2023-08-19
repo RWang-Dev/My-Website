@@ -38,7 +38,7 @@ function AboutMePage() {
       {/* <h1 style={{ marginTop: 75, marginBottom: 75 }}>About Me</h1> */}
       <AboutMeList meetups={aboutMeData} />
       <div className={classes.footer}>
-        Coded with React and deployed to Azure 
+        Coded with React and deployed to Microsoft Azure 
         <hr className={classes.footer_line}></hr>
         <Link to="/contact-me">
           <FontAwesomeIcon className={classes.icons} icon={faEnvelope}></FontAwesomeIcon>

@@ -57,10 +57,8 @@
 
 .logo_color{
   
-  color: transparent;
+  color: lightblue;
   margin: 1.5rem 0px;
-  background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
-  background-clip: text;
   display: inline-block;
 }
 
