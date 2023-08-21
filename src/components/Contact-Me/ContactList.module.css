@@ -81,6 +81,7 @@ input[type="text"]:focus{
 input[type="submit"] {
 
 margin-top: 2vh;
+margin-bottom: 4.5vh;
 cursor: pointer;
 background: rgb(0, 206, 158);
 color: black;

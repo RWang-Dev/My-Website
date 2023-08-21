@@ -54,6 +54,18 @@ export const myInfo = [
             </h4>
             <div style={{marginLeft: 20}}>
             <p>
+              <b>CSCI 4061</b> Operating Systems (Current)
+            </p>
+            <p>
+              <b>CSCI 4511W</b> Intro: Artificial Intelligence (Current)
+            </p>
+            <p>
+              <b>CSCI 5521</b> Machine Learning Fundamentals (Current)
+            </p>
+            <p>
+              <b>CSCI 4131</b> Internet Programming (Current)
+            </p>
+            <p>
               <b>CSCI 5801</b> Software Engineering
             </p>
             <p>
@@ -64,18 +76,9 @@ export const myInfo = [
             </p>
             <p>
               <b>CSCI 3081W</b> Program Design and Development
-            </p>
-            <p>
-              <b>CSCI 1133</b> Introduction to Python
-            </p>
+            </p>   
             <p>
               <b>CSCI 2011</b> Discrete Mathematics
-            </p>
-            <p>
-              <b>CSCI 2033</b> Elementary Linear Algebra
-            </p>
-            <p>
-              <b>CSCI 2041</b> Advanced Programming Principles
             </p>
             <p>
               <b>CSCI 3021</b> Statistics
@@ -161,8 +164,7 @@ export const myInfo = [
             <span className={classes.skills_item}>Microsoft Azure</span> 
             <span className={classes.skills_item}>Unity Engine</span> 
             <span className={classes.skills_item}>Linux</span> 
-            <span className={classes.skills_item}>Blender 3D</span>
-            <span className={classes.skills_item}>Terminal</span> 
+            <span className={classes.skills_item}>Blender 3D Modeling</span>
             <span className={classes.skills_item}>Flask</span>
         </div>
         
@@ -220,7 +222,7 @@ export const myInfo = [
             <span className={classes.skills_item}>May 2023 - Current</span>
 
             <p>
-            Working as a teacher at Tech Academy MN during the summer of 2023 to teach students from 1-10th grade on STEM subjects such as robotics programming, 
+            Working as a teacher at Tech Academy MN during the summer of 2023 to teach students from 4-10th grade on STEM subjects such as robotics programming, 
             Python/Java coding, and game development. Additionally, I am tasked with training with new mechanical equipment, designing builds, 
             and implementing comprehensive curriculum for more hands-on engineering activities including 3D printing, Lego robotics, renewable energy system design, 
             and video production.
@@ -230,6 +232,7 @@ export const myInfo = [
             <p >
             • &nbsp; Taught STEM subjects like coding, software development, and engineering
               <br /> • &nbsp; Provided a quality classroom experience for students over the summer.  
+              <br /> • &nbsp; Organized my own unique curriculum and had hands on experience engineering models.
             </p>
           </p>
         </div>

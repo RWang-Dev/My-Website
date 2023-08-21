@@ -3,3 +3,19 @@
   width: 100%;
   max-width: 120rem;
 }
+
+.footer{
+  text-align: center;
+  color: gray;
+}
+
+.footer_line{
+  border-color: gray;
+  width: 15vw;
+  /* height: 3px; */
+}
+
+.icons{
+  margin: 10px;
+  font-size: 1.25rem;
+}
