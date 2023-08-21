@@ -12,7 +12,7 @@ export const myInfo = [
       <div>
         <h1 className={classes.intro_name}>Robert Wang</h1>
         <h3 className={classes.intro_desc}>[Computer Science Student]</h3>
-        <p className={classes.intro_keywords}>Web Dev  •  Algorithms  •  C/C++  •  React  •   AI/ML</p>
+        <p className={classes.intro_keywords}>Web Dev  •  ReactJS  •  Algorithms  •   AI/ML</p>
       </div>
     ),
   },
