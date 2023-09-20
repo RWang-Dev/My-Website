@@ -45,7 +45,7 @@ function ContactMe() {
             
           </div>
           <div className={classes.contact_description}>
-            <a href="RW-Resume-Fall23.pdf" download >
+            <a href="Robert_Wang_Resume.pdf" download >
               <div className={classes.other_icons}><FontAwesomeIcon icon={faFile} /> </div>
               <span >Download my resume here</span>
             </a>
