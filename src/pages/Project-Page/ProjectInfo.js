@@ -21,6 +21,22 @@ export const projectData = [
       link: "https://github.com/RWang-Dev/My-Website",
     },
     {
+      id: "p10",
+      title: <div className={classes.project_title}>Microblogging Website</div>,
+      image:
+        "4131-Project.png",
+      address: <div>
+      <span className={classes.used_item}>Express</span> 
+      <span className={classes.used_item}>Pug</span>
+      <span className={classes.used_item}>JavaScript</span> 
+      <span className={classes.used_item}>SQL</span> 
+      <span className={classes.used_item}>CSS</span>
+        </div>,
+      description:
+        "Utilized the Express framework to manage various server endpoints, ensuring efficient RESTful API Interactions. Mantained an SQL database, leveraging AJAX for seamless data manipulation, enhancing efficiency and control. Crafted an engaging UI using dynamic Pug templating, and implemented user accounts to provide a more secure and individualized user experience",
+      link: "https://github.com/RWang-Dev/Microblogging-Webapp",
+    },
+    {
       id: "p2",
       title: <div className={classes.project_title}>Task List</div>,
       image:
