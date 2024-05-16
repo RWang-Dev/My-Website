@@ -1,189 +1,179 @@
 .white {
-    background-color: rgba(255, 255, 255, 0);
-    padding-top: 2vh;
-    /* border-radius: 20px; */
+  background-color: rgba(255, 255, 255, 0);
+  padding-top: 2vh;
+  /* border-radius: 20px; */
 }
 
-.intro_name{ 
-    letter-spacing: 1.2rem;
-    font-size: 2rem;
-    font-weight: 400;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: auto;
-    width: auto;
-    color: lightblue;
+.intro_name {
+  letter-spacing: 1.2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: auto;
+  width: auto;
+  color: lightblue;
 }
 
-.title_color_gradient{
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-    background-color: rgba(33, 65, 248, 0.301);
-    margin: 0;
-    margin-bottom: 2vh;
-    width: auto;
-    
-    
+.title_color_gradient {
+  background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  background-color: rgba(33, 65, 248, 0.301);
+  margin: 0;
+  margin-bottom: 2vh;
+  width: auto;
 }
-.title_color_gradient_v2{
-    color: rgb(52, 181, 255);
-    display: inline-block;
-    margin-right: 0px;
-
+.title_color_gradient_v2 {
+  color: rgb(52, 181, 255);
+  display: inline-block;
+  margin-right: 0px;
 }
-.intro_desc{
-    font-size: 4rem;
-    color: transparent;
-    margin: 1.5rem 0px;
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
-    background-clip: text;
-    display: inline-block;
-    
+.intro_desc {
+  font-size: 4rem;
+  color: transparent;
+  margin: 1.5rem 0px;
+  background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 132, 255));
+  background-clip: text;
+  display: inline-block;
 }
 
-.intro_keywords{
-    text-transform: none;
-    font-size: 1.7rem;
-    font-weight: 400;
+.intro_keywords {
+  text-transform: none;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 .blue {
-    background-color: rgba(5, 37, 180, 0.301);
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    
-    /* border-radius: 20px; */
-    padding-left: 10vw;
-    padding-right: 10vw;
-    margin: 0;
-    
+  background-color: rgba(5, 37, 180, 0.301);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+  /* border-radius: 20px; */
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin: 0;
 }
 
-p{
-    margin-top:0;
-    color: white;
+p {
+  margin-top: 0;
+  color: white;
 }
-
 
 /* .standard { */
-    /* padding-left: 20px; */
-    /* padding-left: 200px;
+/* padding-left: 20px; */
+/* padding-left: 200px;
 } */
 
-.hr_work{
-    margin: 0;
-    padding: 0;
-    height: 1px;
-    border: none;
-    background-color: black;
-    align-self: center;
-    width: 100px;
+.hr_work {
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  border: none;
+  background-color: black;
+  align-self: center;
+  width: 100px;
 }
 
-.wakatime{
-    text-align: center;
+.wakatime {
+  text-align: center;
 }
 
-.wakatime_stats{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:5vh;
-    width: 33vw;
+.wakatime_stats {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  width: 33vw;
 }
 
-.separationLine_v1{
-    background: linear-gradient(to right, rgb(0, 255, 234) 0%, rgb(133, 51, 153) 100%);
-    border: 0px;
-    height: 2px;
-    margin: 0;
-    margin-bottom: 1rem;    
-    width: 15vw;
-    margin-left:0px;
-    
+.separationLine_v1 {
+  background: linear-gradient(
+    to right,
+    rgb(0, 255, 234) 0%,
+    rgb(133, 51, 153) 100%
+  );
+  border: 0px;
+  height: 2px;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 15vw;
+  margin-left: 0px;
 }
 
-.skills_table{
-    
-    display: inline-block;
-    width: 25vw;
-    vertical-align: top;
-    text-align: left;
-    margin-left: 2vw;
-    margin-right: 2vw;
+.skills_table {
+  display: inline-block;
+  width: 25vw;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
-.skills_item{
-    background: rgba(51, 128, 128, 0.781);
-    display: inline-block;
-    padding: 0.3rem;
-    border-radius: 5px;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 1vh;
+.skills_item,
+.date_item {
+  background: rgba(51, 128, 128, 0.781);
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 1vh;
+  box-shadow: 3px 3px 3px black;
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
-    
-    .intro_name{   
-        font-size: 1.5rem;  
-        width: auto;
-    }
-    .intro_desc{
-        font-size: 2.5rem;    
-    }
-    .intro_keywords{
-        font-size: 1.2rem;   
-    }
-    .skills_table{
-        display: inline-block;
-        width: 75vw;
-    }
-
-    .wakatime_stats{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:5vh;
-        width: 75vw;
-    }
-    .separationLine_v1{       
-        width: 50vw;
-        
-        
-    }
+  .intro_name {
+    font-size: 1.5rem;
+    width: auto;
   }
-  
+  .intro_desc {
+    font-size: 2.5rem;
+  }
+  .intro_keywords {
+    font-size: 1.2rem;
+  }
+  .skills_table {
+    display: inline-block;
+    width: 75vw;
+  }
+
+  .wakatime_stats {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    width: 75vw;
+  }
+  .separationLine_v1 {
+    width: 50vw;
+  }
+}
 
 @media screen and (min-width: 481px) and (max-width: 1080px) {
-  
-    .intro_name{ 
-        font-size: 1.7rem;
-        width: auto;
-    }
-    .intro_desc{
-        font-size: 3rem;
-    }
-    
-    .intro_keywords{
-        font-size: 1.5rem; 
-    }
-    .skills_table{
-        display: inline-block;
-        width: 75vw;
-    }
-    .wakatime_stats{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:5vh;
-        width: 60vw;
-    }
-    .separationLine_v1{
-         
-        width: 20vw;
-        
-    }
+  .intro_name {
+    font-size: 1.7rem;
+    width: auto;
   }
-  
+  .intro_desc {
+    font-size: 3rem;
+  }
+
+  .intro_keywords {
+    font-size: 1.5rem;
+  }
+  .skills_table {
+    display: inline-block;
+    width: 75vw;
+  }
+  .wakatime_stats {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    width: 60vw;
+  }
+  .separationLine_v1 {
+    width: 20vw;
+  }
+}

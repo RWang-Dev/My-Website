@@ -11,15 +11,15 @@ function ProjectItem(props) {
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
-          <address>{props.address}</address>  
+          <address>{props.address}</address>
         </div>
         <div className={classes.description}>
           <p>{props.description}</p>
         </div>
-        
+
         <div className={classes.actions}>
           {/* Used the ? : syntax to do if else checks within the JSX code */}
-          {props.id === "p2" ? (
+          {/* {props.id === "p2" ? (
             <div>
               <a href={props.link} alt="" target="_blank" rel="noreferrer">
                 <button style={{ marginBottom: 15 }}>View code</button>
@@ -35,7 +35,20 @@ function ProjectItem(props) {
             <a href={props.link} alt="" target="_blank" rel="noreferrer">
               <button style={{ marginBottom: 15 }}>View code</button>
             </a>
-          ) : null}
+          ) : null} */}
+          {props.id === "p2" ? (
+            <div>
+              <a href={props.link} alt="" target="_blank" rel="noreferrer">
+                <button style={{ marginBottom: 15 }}>Visit Web App</button>
+              </a>
+            </div>
+          ) : (
+            <div>
+              <a href={props.link} alt="" target="_blank" rel="noreferrer">
+                <button style={{ marginBottom: 15 }}>View code</button>
+              </a>
+            </div>
+          )}
         </div>
       </Card>
     </li>

@@ -21,24 +21,24 @@ export const projectData = [
     link: "https://github.com/RWang-Dev/My-Website",
   },
   {
-    id: "p10",
-    title: <div className={classes.project_title}>Microblogging Website</div>,
-    image: "4131-Project.png",
+    id: "p2",
+    title: <div className={classes.project_title}>SafeRoute</div>,
+    image: "SafeRoutePic.png",
     address: (
       <div>
-        <span className={classes.used_item}>Express</span>
-        <span className={classes.used_item}>Pug</span>
-        <span className={classes.used_item}>JavaScript</span>
-        <span className={classes.used_item}>SQL</span>
+        <span className={classes.used_item}>React</span>
+        <span className={classes.used_item}>JSX</span>
+        <span className={classes.used_item}>MongoDB</span>
+        <span className={classes.used_item}>Microsoft Azure</span>
         <span className={classes.used_item}>CSS</span>
       </div>
     ),
     description:
-      "Utilized the Express framework to manage various server endpoints, ensuring efficient RESTful API Interactions. Mantained an SQL database, leveraging AJAX for seamless data manipulation, enhancing efficiency and control. Crafted an engaging UI using dynamic Pug templating, and implemented user accounts to provide a more secure and individualized user experience",
-    link: "https://github.com/RWang-Dev/Microblogging-Webapp",
+      "SafeRoute is an application designed for use by students and people who live around the University of Minnesota Twin Cities. This app is designed to help users identify the dangerous areas around campus through a Google Maps API, and also allows them to receive push notifications when a crime occurs near them or a saved location.",
+    link: "https://calm-glacier-0c8e2970f.5.azurestaticapps.net/",
   },
   {
-    id: "p2",
+    id: "p3",
     title: (
       <div className={classes.project_title}>Community Housing Webapp</div>
     ),
@@ -57,42 +57,23 @@ export const projectData = [
       "Created as a web application to help users organize different housing groups and dedicate tasks to other users. Users can create their own accounts, join housing groups, and create their own houses with friends.",
     link: "https://github.com/RWang-Dev/Community-Housing-App",
   },
-  {
-    id: "p3",
-    title: <div className={classes.project_title}>Drone Pickup Service</div>,
-    image: "Drone-pickup-service.png",
-    address: (
-      <div>
-        <span className={classes.used_item}>C++</span>
-        <span className={classes.used_item}>HTML</span>
-        <span className={classes.used_item}>JavaScript</span>
-        <span className={classes.used_item}>Doxygen</span>
-        <span className={classes.used_item}>Docker</span>
-        <span className={classes.used_item}>VS Code</span>
-      </div>
-    ),
-    description: `Final project for my program design class where my team created an uber style drone pickup service with a 3d frontend map of the University of MN campus, with a trip planning UI.\n 
-        Extended front end UI and backend for more features like data collection and energy consumption via batteries`,
-    link: "https://github.com/RWang-Dev/Drone-Pickup-Service",
-  },
+
   {
     id: "p4",
-    title: (
-      <div className={classes.project_title}>Election Voting Processor</div>
-    ),
-    image: "Vote_img.png",
+    title: <div className={classes.project_title}>Microblogging Website</div>,
+    image: "4131-Project.png",
     address: (
       <div>
-        <span className={classes.used_item}>Java</span>
-        <span className={classes.used_item}>Junit</span>
-        <span className={classes.used_item}>Javadoc</span>
-        <span className={classes.used_item}>IntelliJ IDEA</span>
+        <span className={classes.used_item}>Express</span>
+        <span className={classes.used_item}>Pug</span>
+        <span className={classes.used_item}>JavaScript</span>
+        <span className={classes.used_item}>SQL</span>
+        <span className={classes.used_item}>CSS</span>
       </div>
     ),
-    description: `Final project for my software development class where my team created an election processing program to count votes and find the election
-        winners for instant runoff, closed party listing, and popularity only elections. The program will be able to take in many ballots for processing
-        an election, and will output both a table to the terminal as well as an audit file to store the current election processes and winner.`,
-    link: "https://github.com/RWang-Dev/Election-Voting-Processor",
+    description:
+      "Utilized the Express framework to manage various server endpoints, ensuring efficient RESTful API Interactions. Mantained an SQL database, leveraging AJAX for seamless data manipulation, enhancing efficiency and control. Crafted an engaging UI using dynamic Pug templating, and implemented user accounts to provide a more secure and individualized user experience",
+    link: "https://github.com/RWang-Dev/Microblogging-Webapp",
   },
   {
     id: "p5",
@@ -118,6 +99,44 @@ export const projectData = [
   },
   {
     id: "p6",
+    title: <div className={classes.project_title}>Drone Pickup Service</div>,
+    image: "Drone-pickup-service.png",
+    address: (
+      <div>
+        <span className={classes.used_item}>C++</span>
+        <span className={classes.used_item}>HTML</span>
+        <span className={classes.used_item}>JavaScript</span>
+        <span className={classes.used_item}>Doxygen</span>
+        <span className={classes.used_item}>Docker</span>
+        <span className={classes.used_item}>VS Code</span>
+      </div>
+    ),
+    description: `Final project for my program design class where my team created an uber style drone pickup service with a 3d frontend map of the University of MN campus, with a trip planning UI.\n 
+        Extended front end UI and backend for more features like data collection and energy consumption via batteries`,
+    link: "https://github.com/RWang-Dev/Drone-Pickup-Service",
+  },
+  {
+    id: "p7",
+    title: (
+      <div className={classes.project_title}>Election Voting Processor</div>
+    ),
+    image: "Vote_img.png",
+    address: (
+      <div>
+        <span className={classes.used_item}>Java</span>
+        <span className={classes.used_item}>Junit</span>
+        <span className={classes.used_item}>Javadoc</span>
+        <span className={classes.used_item}>IntelliJ IDEA</span>
+      </div>
+    ),
+    description: `Final project for my software development class where my team created an election processing program to count votes and find the election
+        winners for instant runoff, closed party listing, and popularity only elections. The program will be able to take in many ballots for processing
+        an election, and will output both a table to the terminal as well as an audit file to store the current election processes and winner.`,
+    link: "https://github.com/RWang-Dev/Election-Voting-Processor",
+  },
+
+  {
+    id: "p8",
     title: <div className={classes.project_title}>Just Change</div>,
     image: "Just_Change_icon.ico",
     address: (
@@ -135,7 +154,7 @@ export const projectData = [
     link: "https://github.com/Minnehack-2023-JustChange",
   },
   {
-    id: "p7",
+    id: "p9",
     title: (
       <div className={classes.project_title}>
         Farmsight (Analytics for Good Institute (AGI) Hackathon 2023)
@@ -159,7 +178,7 @@ export const projectData = [
     link: "https://github.com/UMN-AGI-Hackathon-2023-FarmSight",
   },
   {
-    id: "p8",
+    id: "p10",
     title: (
       <div className={classes.project_title}>Unity First Person 3D Game</div>
     ),
@@ -177,7 +196,7 @@ export const projectData = [
     link: "https://github.com/RWang-Dev/Unity-First-Person-Shooter-Horror-Game",
   },
   {
-    id: "p9",
+    id: "p11",
     title: <div className={classes.project_title}>English Word Generator</div>,
     image: "Gibberisher_example.png",
     address: (

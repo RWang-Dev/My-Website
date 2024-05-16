@@ -55,9 +55,7 @@ export const myInfo = [
               University of Minnesota Twin Cities
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>
-              September 2021 - Current
-            </span>
+            <span className={classes.date_item}>September 2021 - Current</span>
             <div>
               Currently pursuing a BS in Computer Science and minor in
               Mathematics
@@ -117,7 +115,7 @@ export const myInfo = [
               Minnetonka High School
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>
+            <span className={classes.date_item}>
               September 2017 - June 2021
             </span>
             <br />
@@ -161,10 +159,11 @@ export const myInfo = [
             <span className={classes.skills_item}>Java</span>
             <span className={classes.skills_item}>HTML</span>
             <span className={classes.skills_item}>CSS</span>
-            <span className={classes.skills_item}>C#</span>
             <span className={classes.skills_item}>C/C++</span>
             <span className={classes.skills_item}>JavaScript</span>
+            <span className={classes.skills_item}>SQL</span>
             <span className={classes.skills_item}>OCaml</span>
+            <span className={classes.skills_item}>R</span>
             <span className={classes.skills_item}>X86-64 Assembly</span>
           </div>
           <div className={classes.skills_table}>
@@ -180,15 +179,16 @@ export const myInfo = [
             <span className={classes.skills_item}>Visual Studio</span>
             <span className={classes.skills_item}>ReactJS</span>
             <span className={classes.skills_item}>ExpressJS</span>
+            <span className={classes.skills_item}>Flask</span>
+            <span className={classes.skills_item}>PostgreSQL</span>
+            <span className={classes.skills_item}>MongoDB</span>
+            <span className={classes.skills_item}>MySQL</span>
+            <span className={classes.skills_item}>Microsoft Azure</span>
             <span className={classes.skills_item}>GitHub</span>
             <span className={classes.skills_item}>Git</span>
             <span className={classes.skills_item}>Docker</span>
             <span className={classes.skills_item}>Doxygen</span>
-            <span className={classes.skills_item}>Microsoft Azure</span>
             <span className={classes.skills_item}>Unity Engine</span>
-            <span className={classes.skills_item}>PostgreSQL</span>
-            <span className={classes.skills_item}>MySQL</span>
-            <span className={classes.skills_item}>Flask</span>
           </div>
 
           {/* <br/>
@@ -219,9 +219,7 @@ export const myInfo = [
               Mu2e experiment engineer
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>
-              January 2022 - March 2023
-            </span>
+            <span className={classes.date_item}>January 2022 - March 2023</span>
 
             <p>
               The Muon-To-Electron Experiment (Mu2e) is a national physics
@@ -257,7 +255,7 @@ export const myInfo = [
               Tech Academy Instructor
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>May 2023 - Current</span>
+            <span className={classes.date_item}>May 2023 - Current</span>
 
             <p>
               Working as a teacher at Tech Academy MN during the summer of 2023
@@ -289,9 +287,7 @@ export const myInfo = [
               Science Olympiad
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>
-              January 2017 - March 2021
-            </span>
+            <span className={classes.date_item}>January 2017 - March 2021</span>
             <p>
               In high school, I took part during all four years in my school's
               Science Olympiad team. Science Olympiad is an American team
@@ -322,7 +318,7 @@ export const myInfo = [
               Tutor and tennis coach
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>
+            <span className={classes.date_item}>
               June 2017 - September 2020
             </span>
 
@@ -356,7 +352,7 @@ export const myInfo = [
               VANTAGE Global Business
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>March 2019 - June 2020</span>
+            <span className={classes.date_item}>March 2019 - June 2020</span>
 
             <p>
               Participated in my high school's VANTAGE program to work with
@@ -383,7 +379,7 @@ export const myInfo = [
               Varsity Tennis Player
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.skills_item}>March 2017 - June 2022</span>
+            <span className={classes.date_item}>March 2017 - June 2022</span>
 
             <p>
               Participated in the tennis team at Minnetonka High School, one of
