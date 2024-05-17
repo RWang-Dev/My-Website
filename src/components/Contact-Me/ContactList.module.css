@@ -1,89 +1,99 @@
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.email_form{
-    /* display: flex; */
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    /* border-color: white; */
-    color: black;
-
+.email_form {
+  /* display: flex; */
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  /* border-color: white; */
+  color: black;
 }
 
-form{
-    /* display: inline-block; */
-    width: 100%;
-    font-size: 1rem;
-    color: black;
+form {
+  /* display: inline-block; */
+  width: 100%;
+  font-size: 1rem;
+  color: black;
 }
 
-input{
-    width: 100%;
-    height: 35px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
+input {
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
 
-    color: black;
-    &:focus{
-        border: 2px solid rgba(0, 206, 158, 1);
-    }
-    margin-bottom: 5px;
+  color: black;
+  &:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+  }
+  margin-bottom: 5px;
 }
 
 textarea {
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-    max-height: 100px;
-    min-height: 100px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
-    color: black;
-    &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-    }
-    margin-bottom: 5px;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  color: black;
+  &:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+  }
+  margin-bottom: 5px;
 }
 
-textarea{
-    
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-    max-height: 150px;
-    min-height: 150px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
-    color: black;
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 150px;
+  min-height: 150px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  color: black;
 
-    &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-    }
+  &:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+  }
 }
 
-label{
-    margin-top: 1rem;
-    color: rgb(52, 181, 255);
-    
+label {
+  margin-top: 1rem;
+  color: rgb(52, 181, 255);
 }
-input[type="text"]:focus{
-    color: black;
+input[type="text"]:focus {
+  color: black;
 }
-input[type="submit"] {
+button[type="submit"] {
+  margin-top: 2vh;
+  margin-bottom: 4.5vh;
+  cursor: pointer;
+  background: rgb(0, 206, 158);
+  color: black;
+  border: none;
 
-margin-top: 2vh;
-margin-bottom: 4.5vh;
-cursor: pointer;
-background: rgb(0, 206, 158);
-color: black;
-border: none;
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  &:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+  }
+  margin-bottom: 5px;
+}
+
+button[type="submit"]:hover {
+  background: rgb(1, 255, 196);
 }
