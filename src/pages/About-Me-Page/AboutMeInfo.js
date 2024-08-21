@@ -13,7 +13,7 @@ export const myInfo = [
         <h1 className={classes.intro_name}>Robert Wang</h1>
         <h3 className={classes.intro_desc}>[Computer Science Student]</h3>
         <p className={classes.intro_keywords}>
-          Full-Stack Dev • Games • Algorithms • AI/ML
+          Full-Stack Dev • Applications • Algorithms • AI/ML
         </p>
       </div>
     ),
@@ -27,7 +27,7 @@ export const myInfo = [
         <h2 style={{ color: "lightblue" }}>H e l l o</h2>
         <p>
           <b>
-            My name is Robert, and I am currently a junior at the University of
+            My name is Robert, and I am currently a senior at the University of
             Minnesota Twin Cities majoring in computer science and minoring in
             mathematics. I am currently open to any work opportunities, so
             please feel free to contact me anytime regarding such opportunities.
@@ -60,7 +60,7 @@ export const myInfo = [
               Currently pursuing a BS in Computer Science and minor in
               Mathematics
             </div>
-            <b>Overall GPA: </b> 3.9
+            <b>Overall GPA: </b> 3.95
             <br></br>
             <b>Tech GPA:</b> 4.0
             <h4>
@@ -70,16 +70,16 @@ export const myInfo = [
             </h4>
             <div style={{ marginLeft: 20 }}>
               <p>
-                <b>CSCI 5117</b> Developing the Interactive Web (Current)
+                <b>CSCI 5117</b> Developing the Interactive Web
               </p>
               <p>
-                <b>STAT 3022</b> Data Analysis (Current)
+                <b>CSCI 4131</b> Internet Programming
               </p>
               <p>
-                <b>MATH 3022</b> Multivariable Calculus (Current)
+                <b>CSCI 3081W</b> Program Design and Development
               </p>
               <p>
-                <b>CSCI 4061</b> Operating Systems
+                <b>CSCI 5801</b> Software Engineering
               </p>
               <p>
                 <b>CSCI 4511W</b> Intro: Artificial Intelligence
@@ -88,22 +88,19 @@ export const myInfo = [
                 <b>CSCI 5521</b> Machine Learning Fundamentals
               </p>
               <p>
-                <b>CSCI 4131</b> Internet Programming
+                <b>STAT 3022</b> Data Analysis
               </p>
               <p>
-                <b>CSCI 5801</b> Software Engineering
+                <b>MATH 3022</b> Multivariable Calculus
+              </p>
+              <p>
+                <b>CSCI 4061</b> Operating Systems
               </p>
               <p>
                 <b>CSCI 4041</b> Alogrithms and Data Structures
               </p>
               <p>
                 <b>CSCI 2021</b> Machine Architecture and Organization
-              </p>
-              <p>
-                <b>CSCI 3081W</b> Program Design and Development
-              </p>
-              <p>
-                <b>CSCI 2011</b> Discrete Mathematics
               </p>
             </div>
           </p>
@@ -180,17 +177,15 @@ export const myInfo = [
             <span className={classes.skills_item}>ReactJS</span>
             <span className={classes.skills_item}>ExpressJS</span>
             <span className={classes.skills_item}>Flask</span>
+            <span className={classes.skills_item}>QT/QML</span>
             <span className={classes.skills_item}>PostgreSQL</span>
             <span className={classes.skills_item}>MongoDB</span>
             <span className={classes.skills_item}>MySQL</span>
             <span className={classes.skills_item}>Microsoft Azure</span>
             <span className={classes.skills_item}>GitHub</span>
             <span className={classes.skills_item}>Git</span>
-            <span className={classes.skills_item}>Docker</span>
             <span className={classes.skills_item}>Doxygen</span>
-            <span className={classes.skills_item}>Unity Engine</span>
           </div>
-
           {/* <br/>
         <br /> */}
 
@@ -209,53 +204,66 @@ export const myInfo = [
   },
   {
     id: "m3",
-    title: <h2 style={{ color: "lightblue" }}>Work and Extracurriculars</h2>,
+    title: <h2 style={{ color: "lightblue" }}>Work Experience</h2>,
     image: null,
     description: (
       <div>
         <div className={classes.blue}>
+          <img
+            className={classes.company_logos}
+            style={{
+              height: "3rem",
+              marginBottom: "1vh",
+            }}
+            src="Danfoss_logo.png"
+          ></img>
           <p>
             <h3 className={classes.title_color_gradient_v2}>
-              Mu2e experiment engineer
+              Software Engineer Intern
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.date_item}>January 2022 - March 2023</span>
+            <span className={classes.date_item}>May - August 2024</span>
 
             <p>
-              The Muon-To-Electron Experiment (Mu2e) is a national physics
-              experiment centered at Fermilab aiming to discover physics beyond
-              the standard model. I worked for the UMN Physics Department at the
-              Physics and Nanotechnology building to build an electron detector
-              that plays a crucial part in the whole experiment at Fermilab. To
-              efficiently build such intricate and fragile parts for an electron
-              detector, I had to learn how to use many custom-made tools and
-              software to provide detailed data on each part that I produced.
+              Interned as part of the Danfoss Autonomy team in Danfoss Power
+              Solutions during the summer of 2024. Worked on an application
+              built to improve customers' interface for viewing data and
+              controlling traversal on an autonomous vehicle. Implemented
+              features to detect objects, record vehicle traversals, log and
+              manipulate previously saved paths, and view paths on a map-based
+              interface.
             </p>
 
             <b className={classes.title_color_gradient_v2}>
               Particular duties included
             </b>
             <p>
-              • &nbsp; Working with micro-scale equipment and materials to
-              construct detailed mechanical parts.
-              <br /> • &nbsp; Using highly precise measurement tools to record
-              and manage data.
-              <br /> • &nbsp; Organized Excel data to optimize the runtime of
-              the scripts used to manage the database.
-              <br /> • &nbsp; Teamwork oriented tasks at every step, in order to
-              coordinate very specific actions.
-              <br /> • &nbsp; Mastered a production method and led the training
-              for that process.
+              • &nbsp; Developed a full-stack interface and control system
+              application for Danfoss autonomous vehicles
+              <br /> • &nbsp; Specified detailed software requirements and
+              crafted a scalable and organized user interface using Qt/QML/JS
+              <br /> • &nbsp; Designed and rigorously tested a complex back-end
+              architecture and implemented efficient algorithms with C/C++
+              <br /> • &nbsp; Collaborated and implemented solutions with a
+              diverse, global team using Agile development methodologies
             </p>
           </p>
         </div>
         <div className={classes.blue}>
+          <img
+            className={classes.company_logos}
+            style={{
+              height: "5rem",
+              marginBottom: "-1vh",
+            }}
+            src="tech_academy_logo.png"
+          ></img>
           <p>
             <h3 className={classes.title_color_gradient_v2}>
               Tech Academy Instructor
             </h3>
             <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.date_item}>May 2023 - Current</span>
+            <span className={classes.date_item}>May - August 2023</span>
 
             <p>
               Working as a teacher at Tech Academy MN during the summer of 2023
@@ -282,6 +290,59 @@ export const myInfo = [
           </p>
         </div>
         <div className={classes.blue}>
+          <img
+            className={classes.company_logos}
+            style={{
+              height: "3rem",
+              marginBottom: "1vh",
+            }}
+            src="UMN_logo.png"
+          ></img>
+          <p>
+            <h3 className={classes.title_color_gradient_v2}>
+              Mu2e experiment engineer
+            </h3>
+            <hr className={classes.separationLine_v1}></hr>
+            <span className={classes.date_item}>January 2022 - March 2023</span>
+
+            <p>
+              The Muon-To-Electron Experiment (Mu2e) is a national physics
+              experiment centered at Fermilab aiming to discover physics beyond
+              the standard model. I worked for the UMN Physics Department at the
+              Physics and Nanotechnology building to build an electron detector
+              that plays a crucial part in the whole experiment at Fermilab. To
+              efficiently build such intricate and fragile parts for an electron
+              detector, I had to learn how to use many custom-made tools and
+              software to provide detailed data on each part that I produced.
+            </p>
+
+            <b className={classes.title_color_gradient_v2}>
+              Particular duties included
+            </b>
+            <p>
+              • &nbsp; Working with micro-scale equipment and materials to
+              construct detailed mechanical parts.
+              <br /> • &nbsp; Using highly precise measurement tools to record
+              and manage data.
+              <br /> • &nbsp; Organized CSV data to optimize the runtime of the
+              scripts used to manage the database.
+              <br /> • &nbsp; Teamwork oriented tasks at every step, in order to
+              coordinate very specific actions.
+              <br /> • &nbsp; Mastered a production method and led the training
+              for that process.
+            </p>
+          </p>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: "m3",
+    title: <h2 style={{ color: "lightblue" }}>Extracurriculars</h2>,
+    image: null,
+    description: (
+      <div>
+        <div className={classes.clear}>
           <p>
             <h3 className={classes.title_color_gradient_v2}>
               Science Olympiad
@@ -312,7 +373,7 @@ export const myInfo = [
           </p>
         </div>
 
-        <div className={classes.blue}>
+        <div className={classes.clear}>
           <p>
             <h3 className={classes.title_color_gradient_v2}>
               Tutor and tennis coach
@@ -346,34 +407,8 @@ export const myInfo = [
             </p>
           </p>
         </div>
-        <div className={classes.blue}>
-          <p>
-            <h3 className={classes.title_color_gradient_v2}>
-              VANTAGE Global Business
-            </h3>
-            <hr className={classes.separationLine_v1}></hr>
-            <span className={classes.date_item}>March 2019 - June 2020</span>
-
-            <p>
-              Participated in my high school's VANTAGE program to work with
-              local businesses on real world issues that are affecting business
-              activities
-            </p>
-            <b className={classes.title_color_gradient_v2}>
-              Tasks my team faced
-            </b>
-            <p>
-              • &nbsp; Had to design a new product that solved previously
-              problematic features
-              <br /> • &nbsp; Maintained communication with the owners of these
-              local businesses and had regular in person meetings
-              <br />• &nbsp; Collected data on customers and presented new found
-              data which helped these businesses during pandemic times.
-            </p>
-          </p>
-        </div>
         {/* <hr className={classes.hr_work}/> */}
-        <div className={classes.blue}>
+        <div className={classes.clear}>
           <p>
             <h3 className={classes.title_color_gradient_v2}>
               Varsity Tennis Player

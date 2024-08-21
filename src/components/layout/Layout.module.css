@@ -2,20 +2,20 @@
   margin: 2rem auto;
   width: 100%;
   max-width: 120rem;
+  margin-bottom: 10vh;
 }
 
-.footer{
+.footer {
   text-align: center;
   color: gray;
 }
 
-.footer_line{
+.footer_line {
   border-color: gray;
-  width: 15vw;
-  /* height: 3px; */
+  width: 250px;
 }
 
-.icons{
+.icons {
   margin: 10px;
   font-size: 1.25rem;
 }

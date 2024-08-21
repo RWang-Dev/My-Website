@@ -77,8 +77,8 @@
     justify-content: center;
   }
   .header li {
-    margin-right: 2.5vw;
-    margin-left: 2.5vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
   }
 }
 
@@ -87,8 +87,14 @@
     font-size: 2rem;
     color: white;
     font-weight: bold;
+    visibility: hidden;
+  }
+  .header {
+    text-align: center;
+    justify-content: center;
   }
   .header li {
-    margin-right: 2vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
   }
 }

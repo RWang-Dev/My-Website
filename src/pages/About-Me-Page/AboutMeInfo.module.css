@@ -43,9 +43,20 @@
   text-transform: none;
   font-size: 1.7rem;
   font-weight: 400;
+  margin-top: 2vh;
 }
 .blue {
   background-color: rgba(5, 37, 180, 0.301);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+  /* border-radius: 20px; */
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin: 0;
+}
+
+.clear {
   padding-top: 2vh;
   padding-bottom: 2vh;
 
@@ -123,6 +134,11 @@ p {
   margin-bottom: 1vh;
   box-shadow: 3px 3px 3px black;
 }
+
+/* .company_logos {
+  height: 4rem;
+  margin-bottom: 1vh;
+} */
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
   .intro_name {
