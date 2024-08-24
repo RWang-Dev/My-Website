@@ -240,10 +240,10 @@ export const myInfo = [
             <p>
               • &nbsp; Developed a full-stack interface and control system
               application for Danfoss autonomous vehicles
-              <br /> • &nbsp; Specified detailed software requirements and
-              crafted a scalable and organized user interface using Qt/QML/JS
-              <br /> • &nbsp; Designed and rigorously tested a complex back-end
-              architecture and implemented efficient algorithms with C/C++
+              <br /> • &nbsp; Established detailed software requirements and
+              crafted a scalable and organized user interface using QML & JS
+              <br /> • &nbsp; Implemented efficient C++ algorithms for AV path
+              tracking and data manipulation in complex backend systems
               <br /> • &nbsp; Collaborated and implemented solutions with a
               diverse, global team using Agile development methodologies
             </p>
