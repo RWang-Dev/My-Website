@@ -15,18 +15,18 @@
   
 } */
 
-.intro_page{
+.intro_page {
   z-index: 10;
   color: white;
 }
-.image_opener{
+.image_opener {
   /* margin-top: 5vh; */
   z-index: 0;
   /* width: 100%; */
   /* height: 100%; */
   /* min-height: 100vh; */
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   background-image: url("../../../public/Landing_page_img.png");
   background-size: auto 120vh;
@@ -35,19 +35,17 @@
   box-shadow: 0 0 30px 30px #05004e inset;
   position: relative;
   text-align: center;
-  justify-content: center; 
+  justify-content: center;
   display: flex;
-  align-items: center; 
+  align-items: center;
+  margin: auto;
 }
-
-
 
 .image img {
   width: 75%;
   margin-right: auto;
   margin-left: auto;
   object-fit: cover;
-
 }
 
 .content {
@@ -73,11 +71,9 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  
-  
 }
 
-.actions_container{
+.actions_container {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -92,7 +88,7 @@
   border-radius: 4px;
 }
 
-.card_intro{
+.card_intro {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -118,6 +114,5 @@
   margin-bottom: 10px;
   height: 5px;
   background-color: black; */
-  /* border-radius: 5px; */
+/* border-radius: 5px; */
 /* } */
-
