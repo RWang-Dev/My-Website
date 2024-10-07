@@ -12,6 +12,7 @@ function AboutMeList(props) {
           title={meetup.title}
           address={meetup.address}
           description={meetup.description}
+          edit_mode={props.edit_mode}
         />
       ))}
     </ul>

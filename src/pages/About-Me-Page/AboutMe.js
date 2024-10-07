@@ -4,8 +4,6 @@ import { myInfo } from "./AboutMeInfo";
 // import { Bar } from "react-chartjs-2";
 // import classes from "./AboutMe.module.css"
 
-
-
 // Implemented Chart JS for future reference when adding graphs to website
 // Needed all of the following imports to actually function
 // import {
@@ -28,12 +26,12 @@ import { myInfo } from "./AboutMeInfo";
 
 const aboutMeData = myInfo;
 
-function AboutMePage() {
+function AboutMePage(props) {
   return (
     <section>
       {/* Title section and the AboutMeList, containing all of the AboutMeInfo formatted correctly */}
       {/* <h1 style={{ marginTop: 75, marginBottom: 75 }}>About Me</h1> */}
-      <AboutMeList meetups={aboutMeData} />
+      <AboutMeList edit_mode={props.edit_mode} meetups={aboutMeData} />
     </section>
   );
 }

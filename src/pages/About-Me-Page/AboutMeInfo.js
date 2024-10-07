@@ -138,7 +138,7 @@ export const myInfo = [
     ),
   },
   {
-    id: "m4",
+    id: "m3",
     title: <h2 style={{ color: "lightblue" }}>Relevant skills</h2>,
     image: null,
     description: (
@@ -203,7 +203,7 @@ export const myInfo = [
     ),
   },
   {
-    id: "m3",
+    id: "m4",
     title: <h2 style={{ color: "lightblue" }}>Work Experience</h2>,
     image: null,
     description: (
@@ -337,7 +337,7 @@ export const myInfo = [
     ),
   },
   {
-    id: "m3",
+    id: "m5",
     title: <h2 style={{ color: "lightblue" }}>Extracurriculars</h2>,
     image: null,
     description: (

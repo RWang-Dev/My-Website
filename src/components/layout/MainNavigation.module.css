@@ -56,9 +56,20 @@
 }
 
 .logo_color {
-  color: lightblue;
+  color: lightblue !important;
   margin: 1.5rem 0px;
   display: inline-block;
+  font-size: 2rem !important;
+}
+
+.edit_icon {
+  font-size: 1.25rem;
+  color: white;
+  flex-basis: 0;
+  flex-grow: 0;
+  position: absolute;
+  right: 5vw;
+  /* color: "white" !important; */
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
@@ -80,6 +91,10 @@
     margin-right: 5vw;
     margin-left: 5vw;
   }
+  .edit_icon {
+    left: 5vw;
+    right: auto;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1080px) {
@@ -96,5 +111,9 @@
   .header li {
     margin-right: 5vw;
     margin-left: 5vw;
+  }
+  .edit_icon {
+    left: 5vw;
+    right: auto;
   }
 }
