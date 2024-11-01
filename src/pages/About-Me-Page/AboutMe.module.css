@@ -1,15 +1,109 @@
-.footer{
-    text-align: center;
-    color: gray;
+.footer {
+  text-align: center;
+  color: gray;
 }
 
-.footer_line{
-    border-color: gray;
-    width: 15vw;
-    /* height: 3px; */
+.footer_line {
+  border-color: gray;
+  width: 15vw;
+  /* height: 3px; */
 }
 
-.icons{
-    margin: 10px;
-    font-size: 1.25rem;
+.icons {
+  margin: 10px;
+  font-size: 1.25rem;
+}
+
+.item {
+  margin: 1rem 0;
+}
+
+.intro_page {
+  z-index: 10;
+  color: white;
+}
+.image_opener {
+  z-index: 0;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url("../../../public/Landing_page_img.png");
+  background-size: auto 120vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 30px #05004e inset;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.image img {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  color: #2c292b;
+  margin: 0;
+  padding: 0;
+}
+
+.actions {
+  margin-top: 10vh;
+  margin-bottom: 0;
+  width: 50vw;
+  padding-bottom: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actions_container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  color: #77002e;
+  border: 1px solid #77002e;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.card_intro {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #ffe2ed;
+}
+
+.card {
+  background-color: transparent;
+  width: auto;
+  height: auto;
+}
+
+.info {
+  margin-top: 10vh;
+  text-align: left;
 }

@@ -2,11 +2,8 @@ import React, { useState } from "react";
 
 function AddExperience() {
   const [formData, setFormData] = useState({
-    experienceType: "",
-    title: "",
-    date: "",
-    description: "",
-    contributions: "",
+    introTitle: "",
+    content: "",
   });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -57,13 +54,13 @@ function AddExperience() {
   return (
     <form onSubmit={handleSubmit}>
       <br />
-      <h1>Enter new experience information</h1>
+      <h1>Enter new Intro</h1>
       <div>
-        <label htmlFor="experienceType">Experience Type: </label>
+        <label htmlFor="introTitle">Title</label>
         <input
-          id="experienceType"
-          name="experienceType"
-          value={formData.experienceType}
+          id="introTitle"
+          name="introTitle"
+          value={formData.introTitle}
           onChange={handleChange}
           required
         />
@@ -78,36 +75,7 @@ function AddExperience() {
           required
         />
       </div>
-      <div>
-        <label htmlFor="date">Date:</label>
-        <input
-          id="date"
-          name="date"
-          type="date"
-          value={formData.date}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="description">Description:</label>
-        <textarea
-          id="description"
-          name="description"
-          value={formData.description}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="contributions">Contributions:</label>
-        <textarea
-          id="contributions"
-          name="contributions"
-          value={formData.contributions}
-          onChange={handleChange}
-        />
-      </div>
+
       <button type="submit" disabled={isLoading}>
         {isLoading ? "Adding..." : "Add Experience"}
       </button>

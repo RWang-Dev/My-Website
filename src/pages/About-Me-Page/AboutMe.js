@@ -1,28 +1,11 @@
 import AboutMeList from "../../components/About-Me/AboutMeList";
+import main_styles from "./AboutMe.module.css";
+import sub_styles from "./AboutMeInfo.module.css";
 import { myInfo } from "./AboutMeInfo";
-// import SkillsChart from "./SkillsChart";
-// import { Bar } from "react-chartjs-2";
-// import classes from "./AboutMe.module.css"
-
-// Implemented Chart JS for future reference when adding graphs to website
-// Needed all of the following imports to actually function
-// import {
-//   Chart as ChartJS,
-//   CategoryScale,
-//   LinearScale,
-//   BarElement,
-//   Title,
-//   Tooltip,
-//   Legend,
-// } from "chart.js";
-// ChartJS.register(
-//   CategoryScale,
-//   LinearScale,
-//   BarElement,
-//   Title,
-//   Tooltip,
-//   Legend
-// );
+import Education from "./Education";
+import Experience from "./Experience";
+import Skills from "./Skills";
+import Extracurriculars from "./Extracurriculars";
 
 const aboutMeData = myInfo;
 
@@ -31,7 +14,41 @@ function AboutMePage(props) {
     <section>
       {/* Title section and the AboutMeList, containing all of the AboutMeInfo formatted correctly */}
       {/* <h1 style={{ marginTop: 75, marginBottom: 75 }}>About Me</h1> */}
-      <AboutMeList edit_mode={props.edit_mode} meetups={aboutMeData} />
+      {/* <AboutMeList edit_mode={props.edit_mode} meetups={aboutMeData} /> */}
+      <div className={main_styles.image_opener}>
+        <div className={main_styles.intro_page}>
+          <div>
+            <h1 className={sub_styles.intro_name}>Robert Wang</h1>
+            <h3 className={sub_styles.intro_desc}>
+              [Computer Science Student]
+            </h3>
+            <p className={sub_styles.intro_keywords}>
+              Full-Stack Dev • Applications • Algorithms • AI/ML
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={main_styles.info}>
+        <div style={{ paddingLeft: "10vw", paddingRight: "10vw" }}>
+          <h2 style={{ color: "lightblue" }}>H e l l o</h2>
+          <p>
+            <b>
+              My name is Robert, and I am currently a senior at the University
+              of Minnesota Twin Cities majoring in computer science and minoring
+              in mathematics. I am currently open to any work opportunities, so
+              please feel free to contact me anytime regarding such
+              opportunities. This website is where I post many things about me,
+              like the projects that I've worked on, past experiences, and
+              updated links to my GitHub code. Please take a look around!
+            </b>
+          </p>
+        </div>
+      </div>
+
+      <Education />
+      <Skills />
+      <Experience />
+      <Extracurriculars />
     </section>
   );
 }
