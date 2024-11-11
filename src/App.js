@@ -4,11 +4,13 @@ import { useState } from "react";
 import AboutMePage from "./pages/About-Me-Page/AboutMe";
 import ContactMe from "./pages/Contact-Me-Page/ContactMe";
 import ProjectsPage from "./pages/Project-Page/Projects";
-import AddExperience from "./pages/AddExperience";
+// import AddExperience from "./pages/AddExperience";
+import AddEducation from "./pages/AddEducation";
+import AddIntro from "./pages/AddIntro";
+import AddSkills from "./pages/AddSkills";
 import Layout from "./components/layout/Layout";
 
 const bcrypt = require("bcryptjs");
-const saltRounds = 10;
 
 function App() {
   const [isEditing, setIsEditing] = useState(false);
@@ -79,7 +81,7 @@ function App() {
       <Routes>
         {/* Specifies the 3 main pages that this website will show */}
         <Route path="/" element={<AboutMePage edit_mode={isEditing} />} />
-        <Route path="/db-data" element={<AddExperience />} />
+        <Route path="/db-data" element={<AddSkills />} />
         <Route
           path="/projects"
           element={<ProjectsPage edit_mode={isEditing} />}

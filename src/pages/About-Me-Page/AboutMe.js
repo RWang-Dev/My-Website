@@ -6,10 +6,32 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Extracurriculars from "./Extracurriculars";
+import { useState, useEffect } from "react";
 
 const aboutMeData = myInfo;
 
 function AboutMePage(props) {
+  const [introContent, setIntro] = useState();
+
+  async function getIntro() {
+    try {
+      const request = await fetch("/api/getIntro");
+
+      if (request.ok) {
+        const data = await request.json();
+        setIntro(data.content);
+      } else {
+        console.error("Error getting the intro");
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+    }
+  }
+
+  useEffect(() => {
+    getIntro();
+  }, []);
+
   return (
     <section>
       {/* Title section and the AboutMeList, containing all of the AboutMeInfo formatted correctly */}
@@ -32,15 +54,7 @@ function AboutMePage(props) {
         <div style={{ paddingLeft: "10vw", paddingRight: "10vw" }}>
           <h2 style={{ color: "lightblue" }}>H e l l o</h2>
           <p>
-            <b>
-              My name is Robert, and I am currently a senior at the University
-              of Minnesota Twin Cities majoring in computer science and minoring
-              in mathematics. I am currently open to any work opportunities, so
-              please feel free to contact me anytime regarding such
-              opportunities. This website is where I post many things about me,
-              like the projects that I've worked on, past experiences, and
-              updated links to my GitHub code. Please take a look around!
-            </b>
+            <b>{introContent}</b>
           </p>
         </div>
       </div>

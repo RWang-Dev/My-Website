@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-function AddExperience() {
+function AddIntro() {
   const [formData, setFormData] = useState({
-    introTitle: "",
+    title: "",
     content: "",
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -24,7 +24,7 @@ function AddExperience() {
     setSuccess(false);
 
     try {
-      const response = await fetch("/api/addExperience", {
+      const response = await fetch("/api/setIntro", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -32,17 +32,14 @@ function AddExperience() {
 
       if (!response.ok) {
         throw new Error(
-          `Failed to add experience: ${response.status} ${response.statusText}`
+          `Failed to add Intro: ${response.status} ${response.statusText}`
         );
       }
 
       setSuccess(true);
       setFormData({
-        experienceType: "",
         title: "",
-        date: "",
-        description: "",
-        contributions: "",
+        content: "",
       });
     } catch (err) {
       setError(err.message);
@@ -56,21 +53,21 @@ function AddExperience() {
       <br />
       <h1>Enter new Intro</h1>
       <div>
-        <label htmlFor="introTitle">Title</label>
+        <label htmlFor="title">Title</label>
         <input
-          id="introTitle"
-          name="introTitle"
-          value={formData.introTitle}
+          id="title"
+          name="title"
+          value={formData.title}
           onChange={handleChange}
           required
         />
       </div>
       <div>
-        <label htmlFor="title">Title:</label>
+        <label htmlFor="content">Description:</label>
         <input
-          id="title"
-          name="title"
-          value={formData.title}
+          id="content"
+          name="content"
+          value={formData.content}
           onChange={handleChange}
           required
         />
@@ -80,11 +77,9 @@ function AddExperience() {
         {isLoading ? "Adding..." : "Add Experience"}
       </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      {success && (
-        <p style={{ color: "green" }}>Experience added successfully!</p>
-      )}
+      {success && <p style={{ color: "green" }}>Intro added successfully!</p>}
     </form>
   );
 }
 
-export default AddExperience;
+export default AddIntro;

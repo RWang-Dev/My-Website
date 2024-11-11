@@ -8,7 +8,7 @@ async function getIntro(request, context) {
     const database = client.db("portfolio");
     const intro = database.collection("intro");
 
-    const data = await intro.findOne({ title: "Hello" });
+    const data = await intro.findOne({ title: "H e l l o" });
     const intro_paragraph = data?.content;
 
     return {
