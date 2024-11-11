@@ -51,7 +51,7 @@ function ContactMe() {
             </a>
           </div>
           <div className={classes.contact_description}>
-            <a href="Robert_Wang_Resume.pdf" download>
+            <a href="Robert_Wang_resume.pdf" download>
               <div className={classes.other_icons}>
                 <FontAwesomeIcon icon={faFile} />{" "}
               </div>
@@ -59,7 +59,7 @@ function ContactMe() {
             </a>
           </div>
           <div className={classes.contact_description}>
-            <a href="UMN Transcript Summer 2024.pdf" download>
+            <a href="UMN Transcript Fall 2024.pdf" download>
               <div className={classes.other_icons}>
                 <FontAwesomeIcon icon={faFile} />{" "}
               </div>
