@@ -79,6 +79,7 @@
     height: 0;
     margin: 0;
     padding: 0;
+    visibility: hidden;
   }
   .header a {
     font-size: 1.2rem;
@@ -92,8 +93,8 @@
     margin-left: 5vw;
   }
   .edit_icon {
-    left: 5vw;
-    right: auto;
+    right: 7.5vw;
+    left: auto;
   }
 }
 
@@ -113,7 +114,7 @@
     margin-left: 5vw;
   }
   .edit_icon {
-    left: 5vw;
-    right: auto;
+    right: 7.5vw;
+    left: auto;
   }
 }
