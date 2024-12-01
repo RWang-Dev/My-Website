@@ -12,6 +12,7 @@ const aboutMeData = myInfo;
 
 function AboutMePage(props) {
   const [introContent, setIntro] = useState();
+  const [loading, setLoading] = useState(true);
 
   async function getIntro() {
     try {
@@ -20,6 +21,7 @@ function AboutMePage(props) {
       if (request.ok) {
         const data = await request.json();
         setIntro(data.content);
+        setLoading(false);
       } else {
         console.error("Error getting the intro");
       }
@@ -54,12 +56,12 @@ function AboutMePage(props) {
         <div style={{ paddingLeft: "10vw", paddingRight: "10vw" }}>
           <h2 style={{ color: "lightblue" }}>H e l l o</h2>
           <p>
-            <b>{introContent}</b>
+            <b>{loading ? "Loading..." : introContent}</b>
           </p>
         </div>
       </div>
 
-      <Education />
+      <Education loading={loading} setLoading={setLoading} />
       <Skills />
       <Experience />
       <Extracurriculars />

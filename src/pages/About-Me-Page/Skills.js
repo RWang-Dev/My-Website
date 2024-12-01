@@ -1,5 +1,6 @@
 import styles from "./AboutMe.module.css";
 import info_styles from "./AboutMeInfo.module.css";
+import { useState, useEffect } from "react";
 
 function Skills(props) {
   return (

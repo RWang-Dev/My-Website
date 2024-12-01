@@ -7,6 +7,7 @@ const { addExperience } = require("./experiences");
 const { getPasswordHash, setPasswordHash } = require("../utils/admin");
 const { connectToDatabase } = require("../utils/db");
 const { addEducation, getEducationList } = require("./education");
+const { getSkills, addSkill, deleteSkill } = require("./skills");
 
 app.http("getPasswordHash", {
   methods: ["GET"],
@@ -61,4 +62,25 @@ app.http("getEducationList", {
   authLevel: "anonymous",
   route: "getEducationList",
   handler: getEducationList,
+});
+
+app.http("getSkills", {
+  mathods: ["GET"],
+  authLevel: "anonymous",
+  route: "getSkills",
+  handler: getSkills,
+});
+
+app.http("addSkill", {
+  methods: ["POST"],
+  authLevel: "anonymous",
+  route: "addSkill",
+  handler: addSkill,
+});
+
+app.http("deleteSkill", {
+  methods: ["DELETE"],
+  authLevel: "anonymous",
+  route: "deleteSkill",
+  handler: deleteSkill,
 });
