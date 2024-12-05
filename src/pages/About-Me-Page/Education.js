@@ -39,7 +39,7 @@ function Education(props) {
       </div>
       <p>
         {props.loading ? (
-          <div className={info_styles.centered}>Loading ...</div>
+          <div className={info_styles.centered}>Loading education ...</div>
         ) : (
           educationList.map((education) => (
             <div className={info_styles.blue}>

@@ -23,7 +23,7 @@ function Experience(props) {
               ></img>
               <p>
                 <h3 className={info_styles.title_color_gradient_v2}>
-                  Software Engineer Intern
+                  Danfoss | Software Engineer Intern
                 </h3>
                 <hr className={info_styles.separationLine_v1}></hr>
                 <span className={info_styles.date_item}>May - August 2024</span>
@@ -39,7 +39,7 @@ function Experience(props) {
                 </p>
 
                 <b className={info_styles.title_color_gradient_v2}>
-                  Particular duties included
+                  Tasks included
                 </b>
                 <p>
                   • &nbsp; Developed a full-stack interface and control system
@@ -64,7 +64,7 @@ function Experience(props) {
               ></img>
               <p>
                 <h3 className={info_styles.title_color_gradient_v2}>
-                  Tech Academy Instructor
+                  Tech Academy | STEM Instructor
                 </h3>
                 <hr className={info_styles.separationLine_v1}></hr>
                 <span className={info_styles.date_item}>May - August 2023</span>
@@ -81,7 +81,7 @@ function Experience(props) {
                 </p>
 
                 <b className={info_styles.title_color_gradient_v2}>
-                  Duties and subjects taught
+                  Tasks included
                 </b>
                 <p>
                   • &nbsp; Taught STEM subjects like coding, software
@@ -104,7 +104,7 @@ function Experience(props) {
               ></img>
               <p>
                 <h3 className={info_styles.title_color_gradient_v2}>
-                  Mu2e experiment engineer
+                  University of Minnesota | Mu2e experiment engineer
                 </h3>
                 <hr className={info_styles.separationLine_v1}></hr>
                 <span className={info_styles.date_item}>
@@ -124,7 +124,7 @@ function Experience(props) {
                 </p>
 
                 <b className={info_styles.title_color_gradient_v2}>
-                  Particular duties included
+                  Tasks included
                 </b>
                 <p>
                   • &nbsp; Working with micro-scale equipment and materials to

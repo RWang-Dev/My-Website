@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 function AddExperience() {
   const [formData, setFormData] = useState({
-    experienceType: "",
+    company: "",
     title: "",
     date: "",
     description: "",
-    contributions: "",
+    tasks: "",
   });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -41,11 +41,11 @@ function AddExperience() {
 
       setSuccess(true);
       setFormData({
-        experienceType: "",
+        company: "",
         title: "",
         date: "",
         description: "",
-        contributions: "",
+        tasks: "",
       });
     } catch (err) {
       setError(err.message);
@@ -59,11 +59,11 @@ function AddExperience() {
       <br />
       <h1>Enter new experience information</h1>
       <div>
-        <label htmlFor="experienceType">Experience Type: </label>
+        <label htmlFor="company">Company: </label>
         <input
-          id="experienceType"
-          name="experienceType"
-          value={formData.experienceType}
+          id="company"
+          name="company"
+          value={formData.company}
           onChange={handleChange}
           required
         />
@@ -100,11 +100,11 @@ function AddExperience() {
         />
       </div>
       <div>
-        <label htmlFor="contributions">Contributions:</label>
+        <label htmlFor="tasks">Tasks:</label>
         <textarea
-          id="contributions"
-          name="contributions"
-          value={formData.contributions}
+          id="tasks"
+          name="tasks"
+          value={formData.tasks}
           onChange={handleChange}
         />
       </div>

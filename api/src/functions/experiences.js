@@ -8,14 +8,13 @@ async function addExperience(request, context) {
     const database = client.db("portfolio");
     const experiences = database.collection("experiences");
 
-    const { experience_type, title, date, description, contributions } =
-      await request.json();
+    const { company, title, date, description, tasks } = await request.json();
     await experiences.insertOne({
-      experience_type,
+      company,
       title,
       date,
       description,
-      contributions,
+      tasks,
     });
 
     responseMessage = "Experience added successfully";

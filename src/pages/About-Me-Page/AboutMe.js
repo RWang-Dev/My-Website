@@ -56,15 +56,15 @@ function AboutMePage(props) {
         <div style={{ paddingLeft: "10vw", paddingRight: "10vw" }}>
           <h2 style={{ color: "lightblue" }}>H e l l o</h2>
           <p>
-            <b>{loading ? "Loading..." : introContent}</b>
+            <b>{loading ? "Loading intro ..." : introContent}</b>
           </p>
         </div>
       </div>
 
       <Education loading={loading} setLoading={setLoading} />
-      <Skills />
-      <Experience />
-      <Extracurriculars />
+      <Skills loading={loading} setLoading={setLoading} />
+      <Experience loading={loading} setLoading={setLoading} />
+      <Extracurriculars loading={loading} setLoading={setLoading} />
     </section>
   );
 }
