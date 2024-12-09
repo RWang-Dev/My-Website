@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 function AddExperience() {
   const [formData, setFormData] = useState({
-    experienceType: "",
+    company: "",
     title: "",
     date: "",
     description: "",
-    contributions: "",
+    tasks: [],
   });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -14,6 +14,7 @@ function AddExperience() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -26,27 +27,26 @@ function AddExperience() {
     setError(null);
     setSuccess(false);
 
+    const tasksArray = formData["tasks"].split(";");
+
     try {
       const response = await fetch("/api/addExperience", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          tasks: tasksArray, // Use the processed tasks array here
+        }),
       });
-
-      if (!response.ok) {
-        throw new Error(
-          `Failed to add experience: ${response.status} ${response.statusText}`
-        );
-      }
 
       setSuccess(true);
-      setFormData({
-        experienceType: "",
-        title: "",
-        date: "",
-        description: "",
-        contributions: "",
-      });
+      // setFormData({
+      //   company: "",
+      //   title: "",
+      //   date: "",
+      //   description: "",
+      //   tasks: "",
+      // });
     } catch (err) {
       setError(err.message);
     } finally {
@@ -59,11 +59,11 @@ function AddExperience() {
       <br />
       <h1>Enter new experience information</h1>
       <div>
-        <label htmlFor="experienceType">Experience Type: </label>
+        <label htmlFor="company">Company: </label>
         <input
-          id="experienceType"
-          name="experienceType"
-          value={formData.experienceType}
+          id="company"
+          name="company"
+          value={formData.company}
           onChange={handleChange}
           required
         />
@@ -83,7 +83,6 @@ function AddExperience() {
         <input
           id="date"
           name="date"
-          type="date"
           value={formData.date}
           onChange={handleChange}
           required
@@ -100,11 +99,11 @@ function AddExperience() {
         />
       </div>
       <div>
-        <label htmlFor="contributions">Contributions:</label>
+        <label htmlFor="tasks">Tasks:</label>
         <textarea
-          id="contributions"
-          name="contributions"
-          value={formData.contributions}
+          id="tasks"
+          name="tasks"
+          value={formData.tasks}
           onChange={handleChange}
         />
       </div>

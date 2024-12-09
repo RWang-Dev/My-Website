@@ -49,7 +49,11 @@ function AddSkills() {
       <h1>Add Skills</h1>
       <br />
       <label htmlFor="skill_type">Skill Type: </label>
-      <input name="skill_type" id="skill_type" onChange={handleChange}></input>
+      <select name="skill_type" id="skill_type" onChange={handleChange}>
+        <option>Programming Languages</option>
+        <option>Software & Tools</option>
+      </select>
+      <br />
       <label htmlFor="skill_name">Skill Name: </label>
       <input name="skill_name" id="skill_name" onChange={handleChange}></input>
       <label htmlFor="relevance">Relevance: </label>

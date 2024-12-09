@@ -135,6 +135,11 @@ p {
   box-shadow: 3px 3px 3px black;
 }
 
+.centered {
+  text-align: center;
+  font-weight: bold;
+}
+
 /* .company_logos {
   height: 4rem;
   margin-bottom: 1vh;

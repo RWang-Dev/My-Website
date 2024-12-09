@@ -1,7 +1,57 @@
 import styles from "./AboutMe.module.css";
 import info_styles from "./AboutMeInfo.module.css";
+import { useState, useEffect } from "react";
 
 function Skills(props) {
+  const [skillsList, setSkills] = useState([]);
+  const [programmingSkills, setProgrammingSkills] = useState([]);
+  const [softwareSkills, setSoftwareSkills] = useState([]);
+
+  async function getSkills() {
+    try {
+      const response = await fetch("/api/getSkills");
+      if (response.ok) {
+        const data = await response.json();
+        setSkills(data);
+        console.log("Got skills");
+        console.log("Parsing skills");
+        parseSkills(data);
+      } else {
+        console.log("Error getting data");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  function parseSkills(data) {
+    let progSkills = [];
+    let softSkills = [];
+    console.log("skillsList: ", skillsList);
+    for (const skill of data) {
+      if (skill["skill_type"] == "Programming Languages") {
+        progSkills.push([skill["relevance"], skill["skill_name"]]);
+      } else {
+        softSkills.push([skill["relevance"], skill["skill_name"]]);
+      }
+    }
+
+    progSkills.sort((a, b) => b[0] - a[0]); // Sort descending based on relevance
+    softSkills.sort((a, b) => b[0] - a[0]); // Sort descending based on relevance
+
+    setProgrammingSkills(progSkills);
+    console.log(programmingSkills);
+    setSoftwareSkills(softSkills);
+    console.log(softwareSkills);
+
+    props.setLoading(false);
+    return;
+  }
+
+  useEffect(() => {
+    getSkills();
+  }, []);
+
   return (
     <div>
       <div className={styles.info}>
@@ -21,16 +71,13 @@ function Skills(props) {
                   Programming Languages:{" "}
                 </b>{" "}
                 <br />
-                <span className={info_styles.skills_item}>Python</span>
-                <span className={info_styles.skills_item}>Java</span>
-                <span className={info_styles.skills_item}>HTML</span>
-                <span className={info_styles.skills_item}>CSS</span>
-                <span className={info_styles.skills_item}>C/C++</span>
-                <span className={info_styles.skills_item}>JavaScript</span>
-                <span className={info_styles.skills_item}>SQL</span>
-                <span className={info_styles.skills_item}>OCaml</span>
-                <span className={info_styles.skills_item}>R</span>
-                <span className={info_styles.skills_item}>X86-64 Assembly</span>
+                {props.loading ? (
+                  <div className={info_styles.centered}>Loading skills ...</div>
+                ) : (
+                  programmingSkills.map((skill) => (
+                    <span className={info_styles.skills_item}>{skill[1]}</span>
+                  ))
+                )}
               </div>
               <div className={info_styles.skills_table}>
                 <b
@@ -40,22 +87,13 @@ function Skills(props) {
                   Software & Tools:{" "}
                 </b>{" "}
                 <br />
-                <span className={info_styles.skills_item}>
-                  Visual Studio Code
-                </span>
-                <span className={info_styles.skills_item}>IntelliJ IDEA</span>
-                <span className={info_styles.skills_item}>Visual Studio</span>
-                <span className={info_styles.skills_item}>ReactJS</span>
-                <span className={info_styles.skills_item}>ExpressJS</span>
-                <span className={info_styles.skills_item}>Flask</span>
-                <span className={info_styles.skills_item}>QT/QML</span>
-                <span className={info_styles.skills_item}>PostgreSQL</span>
-                <span className={info_styles.skills_item}>MongoDB</span>
-                <span className={info_styles.skills_item}>MySQL</span>
-                <span className={info_styles.skills_item}>Microsoft Azure</span>
-                <span className={info_styles.skills_item}>GitHub</span>
-                <span className={info_styles.skills_item}>Git</span>
-                <span className={info_styles.skills_item}>Doxygen</span>
+                {props.loading ? (
+                  <div className={info_styles.centered}>Loading skills ...</div>
+                ) : (
+                  softwareSkills.map((skill) => (
+                    <span className={info_styles.skills_item}>{skill[1]}</span>
+                  ))
+                )}
               </div>
               {/* <br/>
         <br /> */}

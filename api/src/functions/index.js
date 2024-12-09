@@ -3,10 +3,11 @@ const { ObjectId } = require("mongodb");
 const MongoClient = require("mongodb").MongoClient;
 
 const { getIntro, setIntro, editIntro } = require("./intro");
-const { addExperience } = require("./experiences");
+const { addExperience, getExperiences } = require("./experiences");
 const { getPasswordHash, setPasswordHash } = require("../utils/admin");
 const { connectToDatabase } = require("../utils/db");
 const { addEducation, getEducationList } = require("./education");
+const { getSkills, addSkill, deleteSkill } = require("./skills");
 
 app.http("getPasswordHash", {
   methods: ["GET"],
@@ -49,6 +50,13 @@ app.http("addExperience", {
   handler: addExperience,
 });
 
+app.http("getExperiences", {
+  methods: ["GET"],
+  authLevel: "anonymous",
+  route: "getExperiences",
+  handler: getExperiences,
+});
+
 app.http("addEducation", {
   methods: ["POST"],
   authLevel: "anonymous",
@@ -61,4 +69,25 @@ app.http("getEducationList", {
   authLevel: "anonymous",
   route: "getEducationList",
   handler: getEducationList,
+});
+
+app.http("getSkills", {
+  mathods: ["GET"],
+  authLevel: "anonymous",
+  route: "getSkills",
+  handler: getSkills,
+});
+
+app.http("addSkill", {
+  methods: ["POST"],
+  authLevel: "anonymous",
+  route: "addSkill",
+  handler: addSkill,
+});
+
+app.http("deleteSkill", {
+  methods: ["DELETE"],
+  authLevel: "anonymous",
+  route: "deleteSkill",
+  handler: deleteSkill,
 });

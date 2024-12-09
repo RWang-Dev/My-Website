@@ -13,6 +13,7 @@ function Education(props) {
         const data = await request.json();
         console.log(data);
         setEducationList(data);
+        props.setLoading(false);
       } else {
         console.error("Error getting education list");
       }
@@ -37,29 +38,33 @@ function Education(props) {
         </h3>
       </div>
       <p>
-        {educationList.map((education) => (
-          <div className={info_styles.blue}>
-            <p>
-              <h3 className={info_styles.title_color_gradient_v2}>
-                {education.institution}
-              </h3>
-              <hr className={info_styles.separationLine_v1}></hr>
-              <span className={info_styles.date_item}>{education.date}</span>
-              <div>{education.description}</div>
-              <b>Overall GPA: </b> {education.gpa}
-              <h4>
-                <i className={info_styles.title_color_gradient_v2}>
-                  {education.additional_section}
-                </i>
-              </h4>
-              <div style={{ marginLeft: 20 }}>
-                {education.section_list.map((section_item) => (
-                  <p>{section_item}</p>
-                ))}
-              </div>
-            </p>
-          </div>
-        ))}
+        {props.loading ? (
+          <div className={info_styles.centered}>Loading education ...</div>
+        ) : (
+          educationList.map((education) => (
+            <div className={info_styles.blue}>
+              <p>
+                <h3 className={info_styles.title_color_gradient_v2}>
+                  {education.institution}
+                </h3>
+                <hr className={info_styles.separationLine_v1}></hr>
+                <span className={info_styles.date_item}>{education.date}</span>
+                <div>{education.description}</div>
+                <b>Overall GPA: </b> {education.gpa}
+                <h4>
+                  <i className={info_styles.title_color_gradient_v2}>
+                    {education.additional_section}
+                  </i>
+                </h4>
+                <div style={{ marginLeft: 20 }}>
+                  {education.section_list.map((section_item) => (
+                    <p>{section_item}</p>
+                  ))}
+                </div>
+              </p>
+            </div>
+          ))
+        )}
       </p>
       ;
     </div>
