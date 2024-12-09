@@ -32,4 +32,33 @@ async function addExperience(request, context) {
   };
 }
 
-module.exports = { addExperience };
+async function getExperiences(request, context) {
+  const client = await connectToDatabase();
+  let responseMessage = "";
+  let responseStatus = 200;
+  try {
+    const database = client.db("portfolio");
+    const experiences = database.collection("experiences");
+
+    const experiencesList = await experiences.find().toArray();
+
+    responseMessage = "Got Experience Lists";
+    return {
+      jsonBody: experiencesList,
+      status: responseStatus,
+    };
+  } catch (error) {
+    console.error("Error getting experiences", error);
+    responseMessage = "Error getting experiences";
+    responseStatus = 500;
+  } finally {
+    await client.close();
+  }
+
+  return {
+    jsonBody: { message: responseMessage },
+    status: responseStatus,
+  };
+}
+
+module.exports = { addExperience, getExperiences };

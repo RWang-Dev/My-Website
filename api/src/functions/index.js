@@ -3,7 +3,7 @@ const { ObjectId } = require("mongodb");
 const MongoClient = require("mongodb").MongoClient;
 
 const { getIntro, setIntro, editIntro } = require("./intro");
-const { addExperience } = require("./experiences");
+const { addExperience, getExperiences } = require("./experiences");
 const { getPasswordHash, setPasswordHash } = require("../utils/admin");
 const { connectToDatabase } = require("../utils/db");
 const { addEducation, getEducationList } = require("./education");
@@ -48,6 +48,13 @@ app.http("addExperience", {
   authLevel: "anonymous",
   route: "addExperience",
   handler: addExperience,
+});
+
+app.http("getExperiences", {
+  methods: ["GET"],
+  authLevel: "anonymous",
+  route: "getExperiences",
+  handler: getExperiences,
 });
 
 app.http("addEducation", {
