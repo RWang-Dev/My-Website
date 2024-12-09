@@ -6,7 +6,7 @@ function AddExperience() {
     title: "",
     date: "",
     description: "",
-    tasks: "",
+    tasks: [],
   });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -14,6 +14,7 @@ function AddExperience() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -26,27 +27,26 @@ function AddExperience() {
     setError(null);
     setSuccess(false);
 
+    const tasksArray = formData["tasks"].split(";");
+
     try {
       const response = await fetch("/api/addExperience", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          tasks: tasksArray, // Use the processed tasks array here
+        }),
       });
-
-      if (!response.ok) {
-        throw new Error(
-          `Failed to add experience: ${response.status} ${response.statusText}`
-        );
-      }
 
       setSuccess(true);
-      setFormData({
-        company: "",
-        title: "",
-        date: "",
-        description: "",
-        tasks: "",
-      });
+      // setFormData({
+      //   company: "",
+      //   title: "",
+      //   date: "",
+      //   description: "",
+      //   tasks: "",
+      // });
     } catch (err) {
       setError(err.message);
     } finally {
@@ -83,7 +83,6 @@ function AddExperience() {
         <input
           id="date"
           name="date"
-          type="date"
           value={formData.date}
           onChange={handleChange}
           required
