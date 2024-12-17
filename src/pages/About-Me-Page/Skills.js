@@ -6,6 +6,7 @@ function Skills(props) {
   const [skillsList, setSkills] = useState([]);
   const [programmingSkills, setProgrammingSkills] = useState([]);
   const [softwareSkills, setSoftwareSkills] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   async function getSkills() {
     try {
@@ -44,13 +45,19 @@ function Skills(props) {
     setSoftwareSkills(softSkills);
     console.log(softwareSkills);
 
-    props.setLoading(false);
     return;
   }
 
   useEffect(() => {
     getSkills();
   }, []);
+
+  useEffect(() => {
+    if (skillsList.length > 0) {
+      console.log("skillsList has been updated:", skillsList);
+      setLoading(false);
+    }
+  }, [skillsList]); // Dependency array: only runs when `experienceList` changes
 
   return (
     <div>
@@ -71,7 +78,7 @@ function Skills(props) {
                   Programming Languages:{" "}
                 </b>{" "}
                 <br />
-                {props.loading ? (
+                {loading ? (
                   <div className={info_styles.centered}>Loading skills ...</div>
                 ) : (
                   programmingSkills.map((skill) => (
@@ -87,7 +94,7 @@ function Skills(props) {
                   Software & Tools:{" "}
                 </b>{" "}
                 <br />
-                {props.loading ? (
+                {loading ? (
                   <div className={info_styles.centered}>Loading skills ...</div>
                 ) : (
                   softwareSkills.map((skill) => (
