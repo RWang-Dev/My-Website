@@ -6,6 +6,7 @@ import ContactMe from "./pages/Contact-Me-Page/ContactMe";
 import ProjectsPage from "./pages/Project-Page/Projects";
 import AddExperience from "./pages/AddExperience";
 import AddEducation from "./pages/AddEducation";
+import AddExtracurriculars from "./pages/AddExtracurriculars";
 import AddIntro from "./pages/AddIntro";
 import AddSkills from "./pages/AddSkills";
 import Layout from "./components/layout/Layout";
@@ -81,7 +82,7 @@ function App() {
       <Routes>
         {/* Specifies the 3 main pages that this website will show */}
         <Route path="/" element={<AboutMePage edit_mode={isEditing} />} />
-        {/* <Route path="/db-data" element={<AddExperience />} /> */}
+
         <Route
           path="/projects"
           element={<ProjectsPage edit_mode={isEditing} />}

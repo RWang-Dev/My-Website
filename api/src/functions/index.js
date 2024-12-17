@@ -8,19 +8,17 @@ const { getPasswordHash, setPasswordHash } = require("../utils/admin");
 const { connectToDatabase } = require("../utils/db");
 const { addEducation, getEducationList } = require("./education");
 const { getSkills, addSkill, deleteSkill } = require("./skills");
+const {
+  addExtracurricular,
+  getExtracurriculars,
+} = require("./extracurriculars");
 
+// GET
 app.http("getPasswordHash", {
   methods: ["GET"],
   authLevel: "anonymous",
   route: "getPasswordHash",
   handler: getPasswordHash,
-});
-
-app.http("setPasswordHash", {
-  methods: ["POST"],
-  authLevel: "anonymous",
-  route: "setPasswordHash",
-  handler: setPasswordHash,
 });
 
 app.http("getIntro", {
@@ -30,38 +28,11 @@ app.http("getIntro", {
   handler: getIntro,
 });
 
-app.http("setIntro", {
-  methods: ["POST"],
-  authLevel: "anonymous",
-  route: "setIntro",
-  handler: setIntro,
-});
-app.http("editIntro", {
-  methods: ["PATCH"],
-  authLevel: "anonymous",
-  route: "editIntro",
-  handler: editIntro,
-});
-
-app.http("addExperience", {
-  methods: ["POST"],
-  authLevel: "anonymous",
-  route: "addExperience",
-  handler: addExperience,
-});
-
 app.http("getExperiences", {
   methods: ["GET"],
   authLevel: "anonymous",
   route: "getExperiences",
   handler: getExperiences,
-});
-
-app.http("addEducation", {
-  methods: ["POST"],
-  authLevel: "anonymous",
-  route: "addEducation",
-  handler: addEducation,
 });
 
 app.http("getEducationList", {
@@ -78,6 +49,42 @@ app.http("getSkills", {
   handler: getSkills,
 });
 
+app.http("getExtracurriculars", {
+  method: ["GET"],
+  authLevel: "anonymous",
+  route: "getExtracurriculars",
+  handler: getExtracurriculars,
+});
+
+// POST
+app.http("setPasswordHash", {
+  methods: ["POST"],
+  authLevel: "anonymous",
+  route: "setPasswordHash",
+  handler: setPasswordHash,
+});
+
+app.http("setIntro", {
+  methods: ["POST"],
+  authLevel: "anonymous",
+  route: "setIntro",
+  handler: setIntro,
+});
+
+app.http("addExperience", {
+  methods: ["POST"],
+  authLevel: "anonymous",
+  route: "addExperience",
+  handler: addExperience,
+});
+
+app.http("addEducation", {
+  methods: ["POST"],
+  authLevel: "anonymous",
+  route: "addEducation",
+  handler: addEducation,
+});
+
 app.http("addSkill", {
   methods: ["POST"],
   authLevel: "anonymous",
@@ -85,9 +92,25 @@ app.http("addSkill", {
   handler: addSkill,
 });
 
+app.http("addExtracurricular", {
+  method: ["POST"],
+  authLevel: "anonymous",
+  route: "addExtracurricular",
+  handler: addExtracurricular,
+});
+
+// DELETE
 app.http("deleteSkill", {
   methods: ["DELETE"],
   authLevel: "anonymous",
   route: "deleteSkill",
   handler: deleteSkill,
+});
+
+// PATCH
+app.http("editIntro", {
+  methods: ["PATCH"],
+  authLevel: "anonymous",
+  route: "editIntro",
+  handler: editIntro,
 });
