@@ -82,7 +82,7 @@ function App() {
       <Routes>
         {/* Specifies the 3 main pages that this website will show */}
         <Route path="/" element={<AboutMePage edit_mode={isEditing} />} />
-        <Route path="/db-data" element={<AddExtracurriculars />} />
+
         <Route
           path="/projects"
           element={<ProjectsPage edit_mode={isEditing} />}
