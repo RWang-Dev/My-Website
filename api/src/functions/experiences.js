@@ -1,20 +1,34 @@
 const { connectToDatabase } = require("../utils/db");
+const { uploadBlob } = require("../utils/blob");
+const { v4: uuidv4 } = require("uuid");
 
 async function addExperience(request, context) {
   const client = await connectToDatabase();
   let responseMessage = "";
   let responseStatus = 200;
+
   try {
+    const body = await request.json();
+    const { company, title, date, description, tasks, imageData } = body;
+
+    // Handle image if it exists
+    let imageUrl = null;
+    if (imageData) {
+      const blobName = `${uuidv4()}.png`;
+      imageUrl = await uploadBlob("portfolio-images", blobName, imageData);
+    }
+
+    // Insert data into MongoDB
     const database = client.db("portfolio");
     const experiences = database.collection("experiences");
 
-    const { company, title, date, description, tasks } = await request.json();
     await experiences.insertOne({
       company,
       title,
       date,
       description,
-      tasks,
+      tasks: Array.isArray(tasks) ? tasks : tasks,
+      imageUrl,
     });
 
     responseMessage = "Experience added successfully";

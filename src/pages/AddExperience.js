@@ -8,17 +8,35 @@ function AddExperience() {
     description: "",
     tasks: [],
   });
+  const [image, setImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+  };
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file && (file.type === "image/jpeg" || file.type === "image/png")) {
+      setImage(file);
+    } else {
+      alert("Please upload a valid JPG or PNG image.");
+    }
+  };
+
+  const convertFileToBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
   };
 
   const handleSubmit = async (e) => {
@@ -27,26 +45,47 @@ function AddExperience() {
     setError(null);
     setSuccess(false);
 
-    const tasksArray = formData["tasks"].split(";");
-
     try {
+      const tasksArray = formData.tasks
+        .split(";")
+        .filter((task) => task.trim());
+
+      // Prepare the request data
+      const requestData = {
+        company: formData.company,
+        title: formData.title,
+        date: formData.date,
+        description: formData.description,
+        tasks: tasksArray,
+      };
+
+      // If there's an image, convert it to base64 and add it to the request
+      if (image) {
+        const imageData = await convertFileToBase64(image);
+        requestData.imageData = imageData;
+      }
+
       const response = await fetch("/api/addExperience", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          tasks: tasksArray, // Use the processed tasks array here
-        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestData),
       });
 
+      if (!response.ok) {
+        throw new Error("Failed to add experience");
+      }
+
       setSuccess(true);
-      // setFormData({
-      //   company: "",
-      //   title: "",
-      //   date: "",
-      //   description: "",
-      //   tasks: "",
-      // });
+      setFormData({
+        company: "",
+        title: "",
+        date: "",
+        description: "",
+        tasks: "",
+      });
+      setImage(null);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -56,7 +95,6 @@ function AddExperience() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <br />
       <h1>Enter new experience information</h1>
       <div>
         <label htmlFor="company">Company: </label>
@@ -105,6 +143,15 @@ function AddExperience() {
           name="tasks"
           value={formData.tasks}
           onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label htmlFor="image">Company Logo (JPG or PNG):</label>
+        <input
+          type="file"
+          id="image"
+          accept=".jpg,.jpeg,.png"
+          onChange={handleImageChange}
         />
       </div>
       <button type="submit" disabled={isLoading}>

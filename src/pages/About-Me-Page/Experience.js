@@ -50,14 +50,17 @@ function Experience(props) {
             ) : (
               experienceList.map((experience) => (
                 <div className={info_styles.blue}>
-                  {/* <img
-                className={info_styles.company_logos}
-                style={{
-                  height: "3rem",
-                  marginBottom: "1vh",
-                }}
-                src="Danfoss_logo.png"
-              ></img> */}
+                  {experience.imageUrl ? (
+                    <img
+                      className={info_styles.company_logos}
+                      style={{
+                        height: "3rem",
+                        marginBottom: "1vh",
+                      }}
+                      src={experience.imageUrl}
+                    ></img>
+                  ) : null}
+
                   <p>
                     <h3 className={info_styles.title_color_gradient_v2}>
                       {experience["company"]} | {experience["title"]}

@@ -82,12 +82,12 @@ function App() {
       <Routes>
         {/* Specifies the 3 main pages that this website will show */}
         <Route path="/" element={<AboutMePage edit_mode={isEditing} />} />
-
         <Route
           path="/projects"
           element={<ProjectsPage edit_mode={isEditing} />}
         />
         <Route path="/contact-me" element={<ContactMe />} />
+        <Route path="/db" element={<AddExperience />} />
       </Routes>
     </Layout>
   );
