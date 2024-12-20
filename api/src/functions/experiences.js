@@ -14,7 +14,11 @@ async function addExperience(request, context) {
     // Handle image if it exists
     let imageUrl = null;
     if (imageData) {
-      const blobName = `${uuidv4()}.png`;
+      // Dynamically determine the file extension based on the image type
+      const fileExtension = imageData.type.split("/")[1]; // 'image/png', 'image/jpeg', etc.
+      const blobName = `${uuidv4()}.${fileExtension}`; // Use the determined file extension
+
+      // Upload the image to the blob storage
       imageUrl = await uploadBlob("portfolio-images", blobName, imageData);
     }
 
