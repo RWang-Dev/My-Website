@@ -3,7 +3,7 @@ import { connectToDatabase } from "../utils/db";
 async function addProject(request, context) {
   const client = await connectToDatabase();
   let responseMessage = "";
-  let responseStatus = 201;
+  let responseStatus = 200;
   try {
     const database = await client.db("portfolio");
     const projects_collection = database.collection("projects");
