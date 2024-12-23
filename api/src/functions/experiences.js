@@ -11,15 +11,20 @@ async function addExperience(request, context) {
     const body = await request.json();
     const { company, title, date, description, tasks, imageData } = body;
 
-    // Handle image if it exists
-    let imageUrl = null;
     if (imageData) {
-      // Dynamically determine the file extension based on the image type
-      const fileExtension = imageData.type.split("/")[1]; // 'image/png', 'image/jpeg', etc.
-      const blobName = `${uuidv4()}.${fileExtension}`; // Use the determined file extension
+      const mimeTypeMatch = imageData.match(/^data:(image\/\w+);base64,/);
+      if (mimeTypeMatch) {
+        const mimeType = mimeTypeMatch[1]; // e.g., "image/jpeg"
+        const extension = mimeType.split("/")[1];
 
-      // Upload the image to the blob storage
-      imageUrl = await uploadBlob("portfolio-images", blobName, imageData);
+        const blobName = `${uuidv4()}.${extension}`;
+
+        // Upload the blob
+        imageUrl = await uploadBlob("portfolio-images", blobName, imageData);
+        console.log(`Uploaded image as ${blobName}`);
+      } else {
+        console.error("Invalid image data format");
+      }
     }
 
     // Insert data into MongoDB

@@ -79,7 +79,7 @@ function Skills(props) {
                 </b>{" "}
                 <br />
                 {loading ? (
-                  <div className={info_styles.centered}>Loading skills ...</div>
+                  <div className={info_styles.centered}>Loading Skills ...</div>
                 ) : (
                   programmingSkills.map((skill) => (
                     <span className={info_styles.skills_item}>{skill[1]}</span>
@@ -95,7 +95,7 @@ function Skills(props) {
                 </b>{" "}
                 <br />
                 {loading ? (
-                  <div className={info_styles.centered}>Loading skills ...</div>
+                  <div className={info_styles.centered}>Loading Skills ...</div>
                 ) : (
                   softwareSkills.map((skill) => (
                     <span className={info_styles.skills_item}>{skill[1]}</span>

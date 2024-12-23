@@ -56,7 +56,7 @@ function AboutMePage(props) {
         <div style={{ paddingLeft: "10vw", paddingRight: "10vw" }}>
           <h2 style={{ color: "lightblue" }}>H e l l o</h2>
           <p>
-            <b>{loading ? "Loading intro ..." : introContent}</b>
+            <b>{loading ? "Loading Intro ..." : introContent}</b>
           </p>
         </div>
       </div>

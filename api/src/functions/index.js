@@ -12,6 +12,7 @@ const {
   addExtracurricular,
   getExtracurriculars,
 } = require("./extracurriculars");
+const { addProject, getProjects } = require("./projects");
 
 // GET
 app.http("getPasswordHash", {
@@ -56,6 +57,13 @@ app.http("getExtracurriculars", {
   handler: getExtracurriculars,
 });
 
+app.http("getProjects", {
+  method: ["GET"],
+  authLevel: "anonymous",
+  route: "getProjects",
+  handler: getProjects,
+});
+
 // POST
 app.http("setPasswordHash", {
   methods: ["POST"],
@@ -97,6 +105,13 @@ app.http("addExtracurricular", {
   authLevel: "anonymous",
   route: "addExtracurricular",
   handler: addExtracurricular,
+});
+
+app.http("addProject", {
+  method: ["POST"],
+  authLevel: "anonymous",
+  route: "addProject",
+  handler: addProject,
 });
 
 // DELETE

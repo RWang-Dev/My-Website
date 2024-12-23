@@ -22,7 +22,9 @@ function AddProject() {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
+    console.log("HANDLING IMAGE CHANGE");
     if (file && (file.type === "image/jpeg" || file.type === "image/png")) {
+      console.log("setting image");
       setImage(file);
     } else {
       alert("Please upload a valid JPG or PNG image.");
@@ -54,17 +56,21 @@ function AddProject() {
 
       // Prepare the request data
       const requestData = {
-        project: formData.company,
+        project: formData.project,
         skills: skillsArray,
         description: formData.description,
         links: linksArray,
       };
+      console.log("FSFNSFSJNFKSFJNSKJFNSKFJN", requestData);
 
       // If there's an image, convert it to base64 and add it to the request
       if (image) {
+        console.log("THERE IS AN IMAGE");
         const imageData = await convertFileToBase64(image);
         requestData.imageData = imageData;
       }
+
+      console.log("REQUEST DATA: ", requestData);
 
       const response = await fetch("/api/addProject", {
         method: "POST",
@@ -79,13 +85,13 @@ function AddProject() {
       }
 
       setSuccess(true);
-      setFormData({
-        project: "",
-        skills: [],
-        description: "",
-        links: [],
-      });
-      setImage(null);
+      // setFormData({
+      //   project: "",
+      //   skills: "",
+      //   description: "",
+      //   links: "",
+      // });
+      // setImage(null);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -129,8 +135,8 @@ function AddProject() {
       <div>
         <label htmlFor="links">Links:</label>
         <textarea
-          id="tasks"
-          name="tasks"
+          id="links"
+          name="links"
           value={formData.tasks}
           onChange={handleChange}
         />

@@ -10,6 +10,7 @@ import AddExtracurriculars from "./pages/AddExtracurriculars";
 import AddIntro from "./pages/AddIntro";
 import AddSkills from "./pages/AddSkills";
 import Layout from "./components/layout/Layout";
+import AddProject from "./pages/AddProject";
 
 const bcrypt = require("bcryptjs");
 
@@ -87,7 +88,7 @@ function App() {
           element={<ProjectsPage edit_mode={isEditing} />}
         />
         <Route path="/contact-me" element={<ContactMe />} />
-        <Route path="/db" element={<AddExperience />} />
+        <Route path="/db" element={<AddProject />} />
       </Routes>
     </Layout>
   );
