@@ -1,9 +1,10 @@
+import { useAppContext } from "../../AppContext";
 import styles from "./AboutMe.module.css";
 import info_styles from "./AboutMeInfo.module.css";
 import { useState, useEffect } from "react";
 
 function Experience(props) {
-  const [experienceList, setExperienceList] = useState([]);
+  const { userData, updateUserData } = useAppContext();
   const [loading, setLoading] = useState(true);
 
   async function getExperience() {
@@ -13,7 +14,8 @@ function Experience(props) {
       if (request.ok) {
         const data = await request.json();
         console.log("Experience data: ", data);
-        setExperienceList(data);
+        updateUserData("experiences", data);
+        setLoading(false);
       } else {
         console.log("Error getting result");
       }
@@ -24,15 +26,25 @@ function Experience(props) {
   }
 
   useEffect(() => {
-    getExperience();
+    if (userData.experiences) {
+      setLoading(false);
+    } else {
+      getExperience();
+    }
   }, []);
 
   useEffect(() => {
-    if (experienceList.length > 0) {
-      console.log("experienceList has been updated:", experienceList);
+    if (userData.experiences) {
       setLoading(false);
     }
-  }, [experienceList]); // Dependency array: only runs when `experienceList` changes
+  }, [userData.experiences]);
+
+  // useEffect(() => {
+  //   if (experienceList.length > 0) {
+  //     console.log("experienceList has been updated:", experienceList);
+  //     setLoading(false);
+  //   }
+  // }, [experienceList]); // Dependency array: only runs when `experienceList` changes
 
   return (
     <div>
@@ -48,7 +60,7 @@ function Experience(props) {
             {loading ? (
               <div className={info_styles.centered}>Loading Experience ...</div>
             ) : (
-              experienceList.map((experience) => (
+              userData.experiences.map((experience) => (
                 <div className={info_styles.blue}>
                   {experience.imageUrl ? (
                     <img

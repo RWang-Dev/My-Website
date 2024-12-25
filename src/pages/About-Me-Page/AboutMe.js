@@ -7,11 +7,12 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Extracurriculars from "./Extracurriculars";
 import { useState, useEffect } from "react";
+import { useAppContext } from "../../AppContext";
 
 const aboutMeData = myInfo;
 
 function AboutMePage(props) {
-  const [introContent, setIntro] = useState();
+  const { userData, updateUserData } = useAppContext();
   const [loading, setLoading] = useState(true);
 
   async function getIntro() {
@@ -20,8 +21,7 @@ function AboutMePage(props) {
 
       if (request.ok) {
         const data = await request.json();
-        setIntro(data.content);
-        setLoading(false);
+        updateUserData("introContent", data.content);
       } else {
         console.error("Error getting the intro");
       }
@@ -31,8 +31,19 @@ function AboutMePage(props) {
   }
 
   useEffect(() => {
-    getIntro();
+    // Check if intro is already in context
+    if (userData.introContent) {
+      setLoading(false);
+    } else {
+      getIntro();
+    }
   }, []);
+
+  useEffect(() => {
+    if (userData.introContent) {
+      setLoading(false);
+    }
+  }, [userData.introContent]);
 
   return (
     <section>
@@ -56,15 +67,15 @@ function AboutMePage(props) {
         <div style={{ paddingLeft: "10vw", paddingRight: "10vw" }}>
           <h2 style={{ color: "lightblue" }}>H e l l o</h2>
           <p>
-            <b>{loading ? "Loading Intro ..." : introContent}</b>
+            <b>{loading ? "Loading Intro ..." : userData.introContent}</b>
           </p>
         </div>
       </div>
 
-      <Education loading={loading} setLoading={setLoading} />
-      <Skills loading={loading} setLoading={setLoading} />
-      <Experience loading={loading} setLoading={setLoading} />
-      <Extracurriculars loading={loading} setLoading={setLoading} />
+      <Education />
+      <Skills />
+      <Experience />
+      <Extracurriculars />
     </section>
   );
 }

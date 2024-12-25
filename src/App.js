@@ -11,6 +11,7 @@ import AddIntro from "./pages/AddIntro";
 import AddSkills from "./pages/AddSkills";
 import Layout from "./components/layout/Layout";
 import AddProject from "./pages/AddProject";
+import { AppProvider } from "./AppContext";
 
 const bcrypt = require("bcryptjs");
 

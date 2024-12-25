@@ -1,11 +1,10 @@
+import { useAppContext } from "../../AppContext";
 import styles from "./AboutMe.module.css";
 import info_styles from "./AboutMeInfo.module.css";
 import { useState, useEffect } from "react";
 
 function Skills(props) {
-  const [skillsList, setSkills] = useState([]);
-  const [programmingSkills, setProgrammingSkills] = useState([]);
-  const [softwareSkills, setSoftwareSkills] = useState([]);
+  const { userData, updateUserData } = useAppContext();
   const [loading, setLoading] = useState(true);
 
   async function getSkills() {
@@ -13,10 +12,11 @@ function Skills(props) {
       const response = await fetch("/api/getSkills");
       if (response.ok) {
         const data = await response.json();
-        setSkills(data);
+        updateUserData("skills", data);
+        console.log("User DAATDATDTADTATDAT: ", userData.data);
         console.log("Got skills");
         console.log("Parsing skills");
-        parseSkills(data);
+        // parseSkills(data);
       } else {
         console.log("Error getting data");
       }
@@ -28,7 +28,8 @@ function Skills(props) {
   function parseSkills(data) {
     let progSkills = [];
     let softSkills = [];
-    console.log("skillsList: ", skillsList);
+
+    console.log("DATATATATATAATATATATA: ", data);
     for (const skill of data) {
       if (skill["skill_type"] == "Programming Languages") {
         progSkills.push([skill["relevance"], skill["skill_name"]]);
@@ -40,24 +41,26 @@ function Skills(props) {
     progSkills.sort((a, b) => b[0] - a[0]); // Sort descending based on relevance
     softSkills.sort((a, b) => b[0] - a[0]); // Sort descending based on relevance
 
-    setProgrammingSkills(progSkills);
-    console.log(programmingSkills);
-    setSoftwareSkills(softSkills);
-    console.log(softwareSkills);
+    updateUserData("programmingSkills", progSkills);
+    updateUserData("softwareSkills", softSkills);
 
     return;
   }
 
   useEffect(() => {
-    getSkills();
-  }, []);
-
-  useEffect(() => {
-    if (skillsList.length > 0) {
-      console.log("skillsList has been updated:", skillsList);
+    if (userData.skills) {
+      parseSkills(userData.skills);
       setLoading(false);
     }
-  }, [skillsList]); // Dependency array: only runs when `experienceList` changes
+  }, [userData.skills]);
+
+  useEffect(() => {
+    if (userData.skills) {
+      setLoading(false);
+    } else {
+      getSkills();
+    }
+  }, []);
 
   return (
     <div>
@@ -81,7 +84,7 @@ function Skills(props) {
                 {loading ? (
                   <div className={info_styles.centered}>Loading Skills ...</div>
                 ) : (
-                  programmingSkills.map((skill) => (
+                  userData.programmingSkills.map((skill) => (
                     <span className={info_styles.skills_item}>{skill[1]}</span>
                   ))
                 )}
@@ -97,7 +100,7 @@ function Skills(props) {
                 {loading ? (
                   <div className={info_styles.centered}>Loading Skills ...</div>
                 ) : (
-                  softwareSkills.map((skill) => (
+                  userData.softwareSkills.map((skill) => (
                     <span className={info_styles.skills_item}>{skill[1]}</span>
                   ))
                 )}

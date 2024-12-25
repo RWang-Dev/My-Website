@@ -154,9 +154,7 @@ function AddProject() {
         {isLoading ? "Adding..." : "Add Experience"}
       </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      {success && (
-        <p style={{ color: "green" }}>Experience added successfully!</p>
-      )}
+      {success && <p style={{ color: "green" }}>Project added successfully!</p>}
     </form>
   );
 }
