@@ -2,6 +2,7 @@
   "routes": [
     {
       "route": "/api/*",
+      "rewrite": "/api",
       "allowedRoles": ["anonymous"]
     }
   ]
