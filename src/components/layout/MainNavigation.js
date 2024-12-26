@@ -40,11 +40,11 @@ function MainNavigation({ toggleEditLayout, isEditingLayout }) {
               Contact
             </Link>
           </li>
-          <li className={classes.title}>
+          {/* <li className={classes.title}>
             <Link className={classes.menus} to="/db">
               DB
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       {isMainPage || isProjectsPage ? (
