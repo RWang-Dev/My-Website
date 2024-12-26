@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "src/functions/*.js",
@@ -8,7 +8,9 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "@azure/storage-blob": "^12.26.0",
     "@azure/functions": "^4.0.0",
+    "uuid": "^11.0.3",
     "mongodb": "^6.9.0"
   },
   "devDependencies": {
