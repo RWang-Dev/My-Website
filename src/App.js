@@ -10,6 +10,8 @@ import AddExtracurriculars from "./pages/AddExtracurriculars";
 import AddIntro from "./pages/AddIntro";
 import AddSkills from "./pages/AddSkills";
 import Layout from "./components/layout/Layout";
+import AddProject from "./pages/AddProject";
+import { AppProvider } from "./AppContext";
 
 const bcrypt = require("bcryptjs");
 
@@ -82,12 +84,12 @@ function App() {
       <Routes>
         {/* Specifies the 3 main pages that this website will show */}
         <Route path="/" element={<AboutMePage edit_mode={isEditing} />} />
-
         <Route
           path="/projects"
           element={<ProjectsPage edit_mode={isEditing} />}
         />
         <Route path="/contact-me" element={<ContactMe />} />
+        <Route path="/db" element={<AddProject />} />
       </Routes>
     </Layout>
   );

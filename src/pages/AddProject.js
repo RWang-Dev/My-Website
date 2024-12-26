@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
-function AddExperience() {
+function AddProject() {
   const [formData, setFormData] = useState({
-    company: "",
-    title: "",
-    date: "",
+    project: "",
+    skills: "",
     description: "",
-    tasks: [],
+    links: "",
   });
   const [image, setImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -23,7 +22,9 @@ function AddExperience() {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
+    console.log("HANDLING IMAGE CHANGE");
     if (file && (file.type === "image/jpeg" || file.type === "image/png")) {
+      console.log("setting image");
       setImage(file);
     } else {
       alert("Please upload a valid JPG or PNG image.");
@@ -46,26 +47,32 @@ function AddExperience() {
     setSuccess(false);
 
     try {
-      const tasksArray = formData.tasks
+      const skillsArray = formData.skills
         .split(";")
-        .filter((task) => task.trim());
+        .filter((skill) => skill.trim());
+      const linksArray = formData.links
+        .split(";")
+        .filter((link) => link.trim());
 
       // Prepare the request data
       const requestData = {
-        company: formData.company,
-        title: formData.title,
-        date: formData.date,
+        project: formData.project,
+        skills: skillsArray,
         description: formData.description,
-        tasks: tasksArray,
+        links: linksArray,
       };
+      console.log("FSFNSFSJNFKSFJNSKJFNSKFJN", requestData);
 
       // If there's an image, convert it to base64 and add it to the request
       if (image) {
+        console.log("THERE IS AN IMAGE");
         const imageData = await convertFileToBase64(image);
         requestData.imageData = imageData;
       }
 
-      const response = await fetch("/api/addExperience", {
+      console.log("REQUEST DATA: ", requestData);
+
+      const response = await fetch("/api/addProject", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -74,18 +81,17 @@ function AddExperience() {
       });
 
       if (!response.ok) {
-        throw new Error("Failed to add experience");
+        throw new Error("Failed to add project");
       }
 
       setSuccess(true);
-      setFormData({
-        company: "",
-        title: "",
-        date: "",
-        description: "",
-        tasks: "",
-      });
-      setImage(null);
+      // setFormData({
+      //   project: "",
+      //   skills: "",
+      //   description: "",
+      //   links: "",
+      // });
+      // setImage(null);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -95,33 +101,23 @@ function AddExperience() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Enter new experience information</h1>
+      <h1>Enter new Project information</h1>
       <div>
-        <label htmlFor="company">Company: </label>
+        <label htmlFor="project">Project Name: </label>
         <input
-          id="company"
-          name="company"
-          value={formData.company}
+          id="project"
+          name="project"
+          value={formData.project}
           onChange={handleChange}
           required
         />
       </div>
       <div>
-        <label htmlFor="title">Title:</label>
+        <label htmlFor="skills">Skills Used:</label>
         <input
-          id="title"
-          name="title"
-          value={formData.title}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="date">Date:</label>
-        <input
-          id="date"
-          name="date"
-          value={formData.date}
+          id="skills"
+          name="skills"
+          value={formData.skills}
           onChange={handleChange}
           required
         />
@@ -137,16 +133,16 @@ function AddExperience() {
         />
       </div>
       <div>
-        <label htmlFor="tasks">Tasks:</label>
+        <label htmlFor="links">Links:</label>
         <textarea
-          id="tasks"
-          name="tasks"
+          id="links"
+          name="links"
           value={formData.tasks}
           onChange={handleChange}
         />
       </div>
       <div>
-        <label htmlFor="image">Company Logo (JPG or PNG):</label>
+        <label htmlFor="image">Project Image (JPG or PNG):</label>
         <input
           type="file"
           id="image"
@@ -158,11 +154,9 @@ function AddExperience() {
         {isLoading ? "Adding..." : "Add Experience"}
       </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      {success && (
-        <p style={{ color: "green" }}>Experience added successfully!</p>
-      )}
+      {success && <p style={{ color: "green" }}>Project added successfully!</p>}
     </form>
   );
 }
 
-export default AddExperience;
+export default AddProject;

@@ -17,7 +17,7 @@ function Layout(props) {
       {/* Main is a special tag that signals the containment of the main content of the website */}
       <main className={classes.main}> {props.children}</main>
       <div className={classes.footer}>
-        Coded with React and deployed to Microsoft Azure
+        Developed with React and deployed to Microsoft Azure
         <hr className={classes.footer_line}></hr>
         <Link to="/contact-me">
           <FontAwesomeIcon

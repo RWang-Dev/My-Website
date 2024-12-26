@@ -1,10 +1,11 @@
 // import { getExtracurriculars } from "../../../api/src/functions/extracurriculars";
+import { useAppContext } from "../../AppContext";
 import styles from "./AboutMe.module.css";
 import info_styles from "./AboutMeInfo.module.css";
 import { useState, useEffect } from "react";
 
 function Extracurriculars(props) {
-  const [extracurriculars, setExtracurricularsList] = useState([]);
+  const { userData, updateUserData } = useAppContext();
   const [loading, setLoading] = useState(true);
 
   async function fetchExtracurriculars() {
@@ -13,8 +14,7 @@ function Extracurriculars(props) {
 
       if (request.ok) {
         const data = await request.json();
-
-        setExtracurricularsList(data);
+        updateUserData("extracurriculars", data);
       } else {
         console.log("Error getting extracurriculars");
       }
@@ -24,14 +24,18 @@ function Extracurriculars(props) {
     return;
   }
   useEffect(() => {
-    fetchExtracurriculars();
+    if (userData.extracurriculars) {
+      setLoading(false);
+    } else {
+      fetchExtracurriculars();
+    }
   }, []);
 
   useEffect(() => {
-    if (extracurriculars.length > 0) {
+    if (userData.extracurriculars) {
       setLoading(false);
     }
-  }, [extracurriculars]);
+  }, [userData.extracurriculars]);
 
   return (
     <div>
@@ -47,7 +51,7 @@ function Extracurriculars(props) {
               Loading Extracurriculars ...
             </div>
           ) : (
-            extracurriculars.map((extracurricular) => (
+            userData.extracurriculars.map((extracurricular) => (
               <div className={info_styles.clear}>
                 <p>
                   <h3 className={info_styles.title_color_gradient_v2}>

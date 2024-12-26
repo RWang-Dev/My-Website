@@ -1,9 +1,11 @@
 import styles from "./AboutMe.module.css";
 import info_styles from "./AboutMeInfo.module.css";
 import { useState, useEffect } from "react";
+import { useAppContext } from "../../AppContext";
 
 function Education(props) {
-  const [educationList, setEducationList] = useState([]);
+  const { userData, updateUserData } = useAppContext();
+  const [loading, setLoading] = useState(true);
 
   async function getEducationList() {
     try {
@@ -12,8 +14,7 @@ function Education(props) {
       if (request.ok) {
         const data = await request.json();
         console.log(data);
-        setEducationList(data);
-        props.setLoading(false);
+        updateUserData("educationList", data);
       } else {
         console.error("Error getting education list");
       }
@@ -25,8 +26,18 @@ function Education(props) {
   }
 
   useEffect(() => {
-    getEducationList();
+    if (userData.educationList) {
+      setLoading(false);
+    } else {
+      getEducationList();
+    }
   }, []);
+
+  useEffect(() => {
+    if (userData.educationList) {
+      setLoading(false);
+    }
+  }, [userData.educationList]);
 
   return (
     <div className={styles.info}>
@@ -38,10 +49,10 @@ function Education(props) {
         </h3>
       </div>
       <p>
-        {props.loading ? (
-          <div className={info_styles.centered}>Loading education ...</div>
+        {loading ? (
+          <div className={info_styles.centered}>Loading Education ...</div>
         ) : (
-          educationList.map((education) => (
+          userData.educationList.map((education) => (
             <div className={info_styles.blue}>
               <p>
                 <h3 className={info_styles.title_color_gradient_v2}>
