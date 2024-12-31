@@ -22,7 +22,6 @@ function AddProject() {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    console.log("HANDLING IMAGE CHANGE");
     if (file && (file.type === "image/jpeg" || file.type === "image/png")) {
       console.log("setting image");
       setImage(file);
@@ -61,16 +60,13 @@ function AddProject() {
         description: formData.description,
         links: linksArray,
       };
-      console.log("FSFNSFSJNFKSFJNSKJFNSKFJN", requestData);
 
       // If there's an image, convert it to base64 and add it to the request
       if (image) {
-        console.log("THERE IS AN IMAGE");
         const imageData = await convertFileToBase64(image);
         requestData.imageData = imageData;
       }
 
-      console.log("REQUEST DATA: ", requestData);
 
       const response = await fetch("/api/addProject", {
         method: "POST",

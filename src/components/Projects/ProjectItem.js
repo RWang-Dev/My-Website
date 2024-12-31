@@ -18,24 +18,6 @@ function ProjectItem(props) {
         </div>
 
         <div className={classes.actions}>
-          {/* Used the ? : syntax to do if else checks within the JSX code */}
-          {/* {props.id === "p2" ? (
-            <div>
-              <a href={props.link} alt="" target="_blank" rel="noreferrer">
-                <button style={{ marginBottom: 15 }}>View code</button>
-              </a>
-            </div>
-          ) : null}
-          {props.id !== "p1" && props.id !== "p2" ? (
-            <a href={props.link} alt="" target="_blank" rel="noreferrer">
-              <button style={{ marginBottom: 15 }}>View code</button>
-            </a>
-          ) : null}
-          {props.id === "p1" ? (
-            <a href={props.link} alt="" target="_blank" rel="noreferrer">
-              <button style={{ marginBottom: 15 }}>View code</button>
-            </a>
-          ) : null} */}
           {props.id === "p2" ? (
             <div>
               <a href={props.link} alt="" target="_blank" rel="noreferrer">
