@@ -13,7 +13,7 @@ function AddSkills() {
 
     let parsedValue = value;
 
-    if (name == "relevance") {
+    if (name === "relevance") {
       parsedValue = parseInt(value);
     }
 
@@ -27,6 +27,7 @@ function AddSkills() {
   async function handleSubmit(e) {
     e.preventDefault();
 
+    console.log("FORM DATA: ", formData);
     try {
       const request = await fetch("/api/addSkill", {
         method: "POST",

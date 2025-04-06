@@ -41,6 +41,7 @@ async function addSkill(request, context) {
 
     const { skill_type, skill_name, relevance } = await request.json();
 
+    console.log(skill_type, skill_name, relevance);
     const existingSkill = await skills_collection.findOne({ skill_name });
 
     if (!existingSkill) {

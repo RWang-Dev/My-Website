@@ -14,6 +14,8 @@ function Experience(props) {
       if (request.ok) {
         const data = await request.json();
         console.log("Experience data: ", data);
+        data.sort((a, b) => a.sortValue - b.sortValue);
+
         updateUserData("experiences", data);
         setLoading(false);
       } else {
