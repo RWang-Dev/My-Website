@@ -12,7 +12,7 @@ function Contact(props) {
               </button>
             </a>
           ) : (
-            <a href="My-Resume-2023.pdf" download="RWang-Resume.pdf">
+            <a href="Robert_Wang_resume.pdf" download="Robert_Wang_resume.pdf">
               <button className={classes.content} type="button">
                 <img src={props.image} alt="" />
               </button>

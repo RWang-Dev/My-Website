@@ -59,7 +59,7 @@ function ContactMe() {
             </a>
           </div>
           <div className={classes.contact_description}>
-            <a href="UMN Transcript Fall 2024.pdf" download>
+            <a href="UMN Transcript Final Unofficial.pdf" download>
               <div className={classes.other_icons}>
                 <FontAwesomeIcon icon={faFile} />{" "}
               </div>

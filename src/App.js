@@ -89,7 +89,7 @@ function App() {
           element={<ProjectsPage edit_mode={isEditing} />}
         />
         <Route path="/contact-me" element={<ContactMe />} />
-        {/* <Route path="/db" element={<AddSkills />} /> */}
+        {/* <Route path="/db" element={<AddExperience />} /> */}
       </Routes>
     </Layout>
   );
